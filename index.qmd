@@ -1,7 +1,21 @@
 ---
-title: "ull-webs-jmtorres"
+title: "Jesús Torres"
+about: 
+  template: jolla
+  image: jmtorres.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/jesustorresdev
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jesusmtorres
+    - icon: github
+      text: Github
+      href: https://github.com/jesustorresdev
+    - icon: globe-europe-africa
+      text: Blog
+      href: https://jesustorres.es/
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Docente e investigador en el departamento de Ingeniería Informática de la Universidad de La Laguna y Director Académico del Máster Universitario en Desarrollo de Videojuegos.
