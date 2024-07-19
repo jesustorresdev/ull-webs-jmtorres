@@ -2,7 +2,7 @@
 title: "Jesús Torres"
 about: 
   template: jolla
-  image: jmtorres.jpg
+  image: images/profile.jpg
   links:
     - icon: twitter
       text: twitter
