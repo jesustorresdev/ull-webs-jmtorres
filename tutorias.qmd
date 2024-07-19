@@ -1,0 +1,22 @@
+Durante el actual curso académico 2023/2024, el horario de tutorías previsto será el siguiente:
+
+* **Martes**, de 17:00 a 20:00.
+* **Miércoles**, de 17:00 a 20:00.
+
+<!-- Para el próximo curso académico 2023/2024, el horario previsto es:
+
+* **Martes**, de 17:00 a 20:00.
+* **Jueves**, de 17:00 a 20:00.
+-->
+
+Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, **se recomienda consultar 📅[este calendario](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB1bnBDWEt5VWlCfGRlZmF1bHR8ZTEwZTA4MzdmOTcwOTdjOGEzMmU3YjhlZDRmYWI2Mzk) con los horarios actualizados y coger cita en el hueco deseado** para confirmar la asistencia.
+
+%%[appointment-calendar]
+
+En caso de tener algún tipo de problema con estos horarios, no dudes en ponerse en 📧[contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/745/jmtorres/) para acordar un día y hora alternativos.
+
+**Las tutorías podrán ser por videoconferencia o presenciales**. Las tutorías presenciales tendrán lugar en el despacho P3.008 del edificio de la Escuela Superior de Ingeniería y Tecnología, ubicado en la última planta del módulo A de dicho edificio.
+
+A continuación se puede ver la ubicación del módulo A de la Escuela Superior de Ingeniería y Tecnología:
+
+%%[ull-office-location]

@@ -7,6 +7,8 @@ website:
     left:
       - href: index.qmd
         text: Inicio
+      - href: tutorias.qmd
+        text: Tuturías
 
 format:
   html:
