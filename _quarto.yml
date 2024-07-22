@@ -7,11 +7,11 @@ website:
     left:
       - href: index.qmd
         text: Inicio
-      - href: tutorias.qmd
-        text: Tutorías
       - href: https://jesustorres.es/
         icon: box-arrow-up-right
         text: Blog
+      - href: tutorias.qmd
+        text: Tutorías
 
 format:
   html:
