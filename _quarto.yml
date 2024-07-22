@@ -10,6 +10,8 @@ website:
       - href: https://jesustorres.es/
         icon: box-arrow-up-right
         text: Blog
+      - href: ssoo.qmd
+        text: SisOp.
       - href: tutorias.qmd
         text: Tutorías
 

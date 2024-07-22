@@ -1,0 +1,25 @@
+---
+title: "Apuntes de Sistemas Operativos"
+---
+
+Las clases de sistemas operativos que imparto se basan en unos apuntes de teoría que he ido elaborando a lo largo de los años. Aunque hace tiempo que son públicos, dejo los enlaces por aquí, por si pueden resultar interesantes a otras personas.
+
+Los apuntes están hechos con [Asciidoctor](https://asciidoctor.org/) y las fuentes están disponibles en [GitHub](https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes). Desde la sección [*releases*](https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes/releases) de ese mismo repositorio, se puede descargar la última versión en PDF. Mientras que la última versión en HTML siempre está disponible en:
+
+🔗 [https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/](https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/)
+
+Los apuntes cubren los temas:
+
+1. 📝**Introducción a los sistemas operativos**: esta sección proporciona una descripción general de los sistemas operativos, incluyendo su historia, funciones y tipos.
+    
+2. 🫧**Organización de los sistemas operativos**: esta sección se centra en la organización interna de los sistemas operativos, considerando sus componentes, servicios e interfaces; además de ofrecer una visión superficial sobre cómo funcionan.
+    
+3. ⚙️**Gestión de procesos**: esta sección se centra en cómo los sistemas operativos gestionan los procesos.
+    
+4. 📚**Gestión de memoria**: esta sección se centra en cómo los sistemas operativos gestionan la memoria principal.
+    
+5. 💿**Gestión del almacenamiento**: esta sección se centra en como se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.
+    
+A lo largo de los distintos capítulos se hace uso de algunos códigos de ejemplo. Estos códigos son partes de programas en C o C++ disponibles al completo en el siguiente repositorio:
+
+{{< fa brands github >}} [https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos](https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos)
