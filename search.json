@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "tutorias.html",
+    "href": "tutorias.html",
+    "title": "Tutorías",
+    "section": "",
+    "text": "Durante el actual curso académico 2024/2025, el horario de tutorías previsto será el siguiente:\n\nMartes, de 17:00 a 20:00.\nMiércoles, de 17:00 a 20:00.\n\nSin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, se recomienda consultar el siguiente 📅calendario con los horarios actualizados y coger cita en el hueco deseado, para confirmar la asistencia:\n\n\n\n\nEn caso de tener algún tipo de problema con estos horarios, no dudes en ponerse en 📧contacto conmigo para acordar un día y hora alternativos."
+  },
+  {
+    "objectID": "tutorias.html#horario-20242025",
+    "href": "tutorias.html#horario-20242025",
+    "title": "Tutorías",
+    "section": "",
+    "text": "Durante el actual curso académico 2024/2025, el horario de tutorías previsto será el siguiente:\n\nMartes, de 17:00 a 20:00.\nMiércoles, de 17:00 a 20:00.\n\nSin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, se recomienda consultar el siguiente 📅calendario con los horarios actualizados y coger cita en el hueco deseado, para confirmar la asistencia:\n\n\n\n\nEn caso de tener algún tipo de problema con estos horarios, no dudes en ponerse en 📧contacto conmigo para acordar un día y hora alternativos."
+  },
+  {
+    "objectID": "tutorias.html#online-presencial",
+    "href": "tutorias.html#online-presencial",
+    "title": "Tutorías",
+    "section": "Online / presencial",
+    "text": "Online / presencial\nLas tutorías pueden ser por videoconferencia, utilizando Google Meet, o presenciales. En el formulario utilizado para reservar la tutoría se debe indicar la preferencia a este respecto."
+  },
+  {
+    "objectID": "tutorias.html#ubicación",
+    "href": "tutorias.html#ubicación",
+    "title": "Tutorías",
+    "section": "Ubicación",
+    "text": "Ubicación\nLas tutorías presenciales tendrán lugar en el despacho P3.008 del edificio de la Escuela Superior de Ingeniería y Tecnología, ubicado en la última planta del módulo A de dicho edificio.\nA continuación se puede ver la ubicación del módulo A de la Escuela Superior de Ingeniería y Tecnología:"
+  },
+  {
+    "objectID": "ssoo.html",
+    "href": "ssoo.html",
+    "title": "Apuntes de Sistemas Operativos",
+    "section": "",
+    "text": "Las clases de sistemas operativos que imparto se basan en unos apuntes de teoría que he ido elaborando a lo largo de los años. Aunque hace tiempo que son públicos, dejo los enlaces por aquí, por si pueden resultar interesantes a otras personas.\nLos apuntes están hechos con Asciidoctor y las fuentes están disponibles en GitHub. Desde la sección releases de ese mismo repositorio, se puede descargar la última versión en PDF. Mientras que la última versión en HTML siempre está disponible en:\n🔗 https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/\nLos apuntes cubren los temas:\n\n📝Introducción a los sistemas operativos: esta sección proporciona una descripción general de los sistemas operativos, incluyendo su historia, funciones y tipos.\n🫧Organización de los sistemas operativos: esta sección se centra en la organización interna de los sistemas operativos, considerando sus componentes, servicios e interfaces; además de ofrecer una visión superficial sobre cómo funcionan.\n⚙️Gestión de procesos: esta sección se centra en cómo los sistemas operativos gestionan los procesos.\n📚Gestión de memoria: esta sección se centra en cómo los sistemas operativos gestionan la memoria principal.\n💿Gestión del almacenamiento: esta sección se centra en como se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.\n\nA lo largo de los distintos capítulos se hace uso de algunos códigos de ejemplo. Estos códigos son partes de programas en C o C++ disponibles al completo en el siguiente repositorio:\n https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jesús Torres",
+    "section": "",
+    "text": "Docente e investigador en el departamento de Ingeniería Informática de la Universidad de La Laguna y Director Académico del Máster Universitario en Desarrollo de Videojuegos."
+  },
+  {
+    "objectID": "tfc.html#grado",
+    "href": "tfc.html#grado",
+    "title": "Trabajos finales",
+    "section": "Grado",
+    "text": "Grado"
+  }
+]
