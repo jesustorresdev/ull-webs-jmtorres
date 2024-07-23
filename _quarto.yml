@@ -12,10 +12,12 @@ website:
       - href: https://jesustorres.es/
         icon: box-arrow-up-right
         text: Blog
-      - href: ssoo.qmd
-        text: SisOp.
+      - href: tfc.qmd
+        text: TFG/TFM
       - href: tutorias.qmd
         text: Tutorías
+      - href: ssoo.qmd
+        text: SisOp.
 
 format:
   html:
