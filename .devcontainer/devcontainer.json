@@ -25,8 +25,7 @@
 			},
 			"extensions": [
 				"github.vscode-github-actions",
-				"pascalreitermann93.vscode-yaml-sort",
-				"sumneko.lua"
+				"pascalreitermann93.vscode-yaml-sort"
 			]
 		}
 	}
