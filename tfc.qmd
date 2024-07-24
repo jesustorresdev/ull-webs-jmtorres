@@ -9,12 +9,14 @@ listing:
   field-types:
     year: number
   field-required: [title, author, year, description] 
-  sort: "year desc"
+  sort:
+   - "year desc"
+   - "title asc"
   filter-ui: true
 ---
 
 Esta es una selección de algunos trabajos finales de carrera tutorizados.
-Se pueden localizar fácilmente otros trabajos finales en la colección [«docencia»](https://riull.ull.es/xmlui/handle/915/488/discover?query=%22Jes%C3%BAs+Miguel+Torres%22&submit=&rpp=10&sort_by=dc.date.issued_dt&order=desc) del repositorio institucional de la Universidad de La Laguna.
+Se pueden localizar fácilmente otros trabajos finales en la colección [docencia](https://riull.ull.es/xmlui/handle/915/488/discover?query=%22Jes%C3%BAs+Miguel+Torres%22&submit=&rpp=10&sort_by=dc.date.issued_dt&order=desc) del repositorio institucional de la Universidad de La Laguna.
 
 ::: {#tfc-listing}
 :::

@@ -1,1 +1,4 @@
 /* css styles */
+#quarto-content a:link {
+  text-decoration: none;
+}
