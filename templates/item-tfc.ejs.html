@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Trabajos finales – Jesús Torres</title>
+<title>item-tfc.ejs – Jesús Torres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +66,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-tfc-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-author-portfolio','listing-year','listing-categories','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-author-portfolio","listing-year","listing-categories","listing-description","listing-image"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-tfc-listing'] = new List('listing-tfc-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +78,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jesús Torres</span>
     </a>
   </div>
@@ -149,7 +89,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
@@ -158,15 +98,15 @@ window.Quarto = {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./tfc.html" aria-current="page"> 
+    <a class="nav-link" href="../tfc.html"> 
 <span class="menu-text">TFG/TFM</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorias.html"> 
+    <a class="nav-link" href="../tutorias.html"> 
 <span class="menu-text">Tutorías</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ssoo.html"> 
+    <a class="nav-link" href="../ssoo.html"> 
 <span class="menu-text">SisOp.</span></a>
   </li>  
 </ul>
@@ -180,117 +120,59 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="MUDV">MUDV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFG">TFG <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFM">TFM <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Trabajos finales</h1>
+
+
+
+<p>&lt;% // Fields const fields = listing.fields;</p>
+<p>// Image properties const imageAlign = listing[‘image-align’] || ‘left’; const imageHeight = listing[‘image-height’];</p>
+<p>// Fields that don’t have a known place to be displayed in this template const otherFields = fields.filter(field =&gt; { return ![“title”, “image”, “image-alt”, “date”, “author”, “subtitle”, “description”, “reading-time”, “categories”].includes(field); });</p>
+<p>// Capture the item number for utility functions that need it const itemNumber = listing.utilities.itemNumber();</p>
+<p>// Writes a metadata value const outputMetadata = (item, field) =&gt; {</p>
+<p>const readField = (item, field) =&gt; { let value = item[field]; if (field.includes(“.”) &amp;&amp; !field.endsWith(“.”) &amp;&amp; !field.startsWith(“.”)) { const fields = field.split(“.”); value = item; for (const deref of fields) { value = value[deref]; } } return value; }</p>
+<p>let value = readField(item, field); if (value !== undefined) { print(<code>&lt;div class="metadata-value listing-${field}"&gt;${listing.utilities.outputLink(item, field, value)}&lt;/div&gt;</code>);<br>
+} } %&gt;</p>
+<div class="quarto-post image-<%= imageAlign %>" <%="listing.utilities.metadataAttrs(item)" %="">&gt;
+&lt;% if (fields.includes('image')) { %&gt;
+<div class="thumbnail">
+<a href="<%- item.path %>" class="no-external">
+&lt;% if (item.image) { %&gt;
+&lt;%= listing.utilities.img(itemNumber, item.image, "thumbnail-image", item['image-alt'], item['image-lazy-loading'] ?? listing['image-lazy-loading']) %&gt;
+&lt;% } else { %&gt;
+&lt;%= listing.utilities.imgPlaceholder(listing.id, itemNumber, item.outputHref) %&gt;
+&lt;% } %&gt;
+</a>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Esta es una selección de algunos trabajos finales de carrera tutorizados. Se pueden localizar fácilmente otros trabajos finales en la colección <a href="https://riull.ull.es/xmlui/handle/915/488/discover?query=%22Jes%C3%BAs+Miguel+Torres%22&amp;submit=&amp;rpp=10&amp;sort_by=dc.date.issued_dt&amp;order=desc">docencia</a> del repositorio institucional de la Universidad de La Laguna.</p>
-<div id="listing-tfc-listing" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+&lt;% } %&gt;
+<div class="body">
+&lt;% if (fields.includes('title')) { %&gt;
+<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external">&lt;%= item.title %&gt;</a></h3>
+<div class="listing-subtitle"><a href="<%- item.path %>" class="no-external">&lt;%= item.subtitle %&gt;</a></div>
+&lt;% } %&gt;
+&lt;% if (fields.includes('categories') &amp;&amp; item.categories) { %&gt; 
+<div class="listing-categories">
+&lt;% for (const category of item.categories) { %&gt;
+<div class="listing-category" onclick="window.quartoListingCategory('<%=category%>'); return false;">&lt;%= category %&gt;</div>
+&lt;% } %&gt;
 </div>
-<div class="list quaro-listing-default">
-  
-    
+&lt;% } %&gt; 
+&lt;% if (fields.includes('description')) { %&gt;
+<div class="delink listing-description"><a href="<%- item.path %>" class="no-external">&lt;%= item.description %&gt;</a></div>
+&lt;% } %&gt;
+</div>
+<div class="metadata"><a href="<%- item.path %>" class="no-external">
+&lt;% if (fields.includes('date') &amp;&amp; item.date) { %&gt;<div class="listing-date">`&lt;%= item.date %&gt;`{=html}</div>&lt;% } %&gt;
+&lt;% if (fields.includes('author') &amp;&amp; item.author) { %&gt;<div class="listing-author">&lt;%= item.author %&gt;</div>&lt;% } %&gt;
+&lt;% if (fields.includes('reading-time') &amp;&amp; item['reading-time']) { %&gt; <div class="listing-reading-time">&lt;%= item['reading-time'] %&gt;</div> &lt;% } %&gt;
+&lt;% for (const field of otherFields) { %&gt;
+&lt;% outputMetadata(item, field) %&gt;&lt;% } %&gt;</a></div>
 
-    <div class="quarto-post image-right" data-index="0" data-categories="TFM,MUDV" data-listing-year-sort="2024">
-      
-      <div class="thumbnail">
-        
-        <img loading="lazy" src="./images/tfc/magariños2024.png" class="thumbnail-image">
-        
-      </div>
-      
-      <div class="body">
-        
-        <h3 class="no-anchor listing-title">Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral</h3>
-        
-         
-        <div class="listing-categories">
-        
-          <div class="listing-category" onclick="window.quartoListingCategory('TFM'); return false;">TFM</div>
-        
-          <div class="listing-category" onclick="window.quartoListingCategory('MUDV'); return false;">MUDV</div>
-        
-        </div>
-         
-        
-        <div class="delink listing-description">Desarrollo de un videojuego controlado mediante *eye tracker* para
-emplearlo en la rehabilitación de pacientes con movilidad reducida
-ocasionada por una lesión cerebral.
 </div>
-        
-      </div>
-      <div class="metadata">
-      <div class="listing-date">2024</div>
-      <div class="listing-author"><a href="http://google.com">Juan Salvador Magariños Alba</a></div>
-      </div>
-    </div>
-  
-    
-
-    <div class="quarto-post image-right" data-index="1" data-categories="TFG" data-listing-year-sort="2024">
-      
-      <div class="thumbnail">
-        
-        <img loading="lazy" src="./images/tfc/cruz2024.png" class="thumbnail-image">
-        
-      </div>
-      
-      <div class="body">
-        
-        <h3 class="no-anchor listing-title">Generación procedural de planetoides en videojuegos</h3>
-        
-         
-        <div class="listing-categories">
-        
-          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
-        
-        </div>
-         
-        
-        <div class="delink listing-description">Desarrollo de un algoritmo de generción procesural para crear planetoides en tres
-dimensiones a gran escala. Para demostrar la viabilidad del algoritmo, se implementa
-un prototipo de videojuego donde genera un planetoide que el jugador puede explorar.
-</div>
-        
-      </div>
-      <div class="metadata">
-      <div class="listing-date">2024</div>
-      <div class="listing-author">Ginés Cruz Chávez</div>
-      </div>
-    </div>
-  
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
 
 
 
