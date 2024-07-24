@@ -1,0 +1,46 @@
+```{=html}
+<div class="list quaro-listing-default">
+  <% for (const item of items) { %>
+    <%
+    const aOpen = item.path ? `<a href="${item.path}">` : '';
+    const aClose = item.path ? '</a>' : '';
+    const getAuthor = (item) => {
+      if (item['author-portfolio']) {
+        return `<a href="${item['author-portfolio']}">${item.author}</a>`;
+      } else {
+        return item.author;
+      }
+    }
+    %>
+
+    <div class="quarto-post image-right" <%= metadataAttrs(item) %>>
+      <% if (item.image) { %>
+      <div class="thumbnail">
+        <%= aOpen %>
+        <img loading="lazy" src="<%- item.image %>" class="thumbnail-image"/>
+        <%= aClose %>
+      </div>
+      <% } %>
+      <div class="body">
+        <% if (item.title) { %>
+        <h3 class="no-anchor listing-title"><%= aOpen %><%= item.title %><%= aClose %></h3>
+        <% } %>
+        <% if (item.categories) { %> 
+        <div class="listing-categories">
+        <% for (const category of item.categories) { %>
+          <div class="listing-category" onclick="window.quartoListingCategory('<%=category%>'); return false;"><%= category %></div>
+        <% } %>
+        </div>
+        <% } %> 
+        <% if (item.description) { %>
+        <div class="delink listing-description"><%= aOpen %><%= item.description %><%= aClose %></div>
+        <% } %>
+      </div>
+      <div class="metadata"><%= aOpen %>
+      <% if (item.year) { %><div class="listing-date"><%= item.year %></div><% } %>
+      <% if (item.author) { %><div class="listing-author"><%= getAuthor(item) %></div><% } %>
+      <%= aClose %></div>
+    </div>
+  <% } %>
+</div>
+```

@@ -1,0 +1,19 @@
+- title: Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral
+  author: Juan Salvador Magariños Alba
+  author-portfolio: http://google.com
+  year: 2024
+  categories: [TFM, MUDV]
+  description: |
+    Desarrollo de un videojuego controlado mediante *eye tracker* para
+    emplearlo en la rehabilitación de pacientes con movilidad reducida
+    ocasionada por una lesión cerebral.
+  image: /images/tfc/magariños2024.png
+- title: Generación procedural de planetoides en videojuegos
+  author: Ginés Cruz Chávez
+  year: 2024
+  categories: [TFG]
+  description: |
+    Desarrollo de un algoritmo de generción procesural para crear planetoides en tres
+    dimensiones a gran escala. Para demostrar la viabilidad del algoritmo, se implementa
+    un prototipo de videojuego donde genera un planetoide que el jugador puede explorar.
+  image: /images/tfc/cruz2024.png
