@@ -3,6 +3,8 @@ project:
   post-render:
     - "cp -rnv static/. _site/"
 
+lang: es
+
 website:
   title: "Jesús Torres"
   navbar:
