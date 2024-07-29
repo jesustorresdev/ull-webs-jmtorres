@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^google.*\.html - [L]
+RewriteRule ^google.*\.html$ - [L]
+RewriteRule ^tutorias.html$ - [L]
 RewriteRule ^me/2016/12/deep-learning-ii-congreso-estudiantes-ingenieria-informatica/$ https://jesustorres.es/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingenieria-informatica [L,R=301]
 RewriteRule ^me/2015/04/capafons2015-es-tiempo-de-cambio/$ https://jesustorres.es/capafons2015-es-tiempo-de-cambio [L,R=301]
 RewriteRule ^me/2015/04/por-que-voy-en-el-equipo-de-juan-capafons/$ https://jesustorres.es/por-que-voy-en-el-equipo-de-juan-capafons [L,R=301]
@@ -55,5 +56,5 @@ RewriteRule ^me/2013/12/aprendiendo-scrum-en-el-dia-del-centro/$ https://jesusto
 RewriteRule ^me/2013/02/introduccion-al-uso-de-hilos-en-qt/$ https://jesustorres.es/introduccion-al-uso-de-hilos-en-qt [L,R=301]
 RewriteRule ^me/2013/02/layouts-en-qt-organizacion-de-controles/$ https://jesustorres.es/layouts-en-qt-organizacion-de-controles [L,R=301]
 RewriteRule ^me/2013/02/como-usar-qmovie-en-qt/$ https://jesustorres.es/como-usar-qmovie-en-qt [L,R=301]
-RewriteRule ^(me/)?tutor(i|í)a(s)?$ /tutorias.html [L,R=301]
+RewriteRule ^(me/)?tutor(i|í)a(s)? /tutorias.html [L,R=301]
 </IfModule>
