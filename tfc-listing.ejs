@@ -2,9 +2,15 @@
 <div class="list quaro-listing-default">
   <% for (const item of items) { %>
     <div class="quarto-post image-right" <%= metadataAttrs(item) %>>
-      <% if (item.image) { %>
+      <% if (item.thumbnail) { %>
       <div class="thumbnail">
-        <img loading="lazy" src="<%- item.image %>" class="thumbnail-image"/>
+        <% if (item.thumbnail.endsWith('.webm')) { %>
+        <video autoplay muted loop>
+          <source src="<%- item.thumbnail %>" type="video/webm">
+        </video>
+        <% } else { %>
+        <img loading="lazy" src="<%- item.thumbnail %>" class="thumbnail-image"/>
+        <% } %>
       </div>
       <% } %>
       <div class="body">

@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+div.quarto-post .thumbnail video {
+  width: 100%;
+}
+
 div.quarto-post .listing-author-portfolio {
   color: #fff;
   background-color: #2780e3;

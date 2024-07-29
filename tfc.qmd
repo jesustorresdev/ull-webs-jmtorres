@@ -12,6 +12,7 @@ listing:
   sort:
    - "year desc"
   filter-ui: true
+  page-size: 10
 ---
 
 Esta es una selección de algunos trabajos finales de carrera tutorizados.
