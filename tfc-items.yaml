@@ -1,11 +1,11 @@
 - title: Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral
   author: Juan Salvador Magariños Alba
-  # author-portfolio: 
+  author-portfolio: https://sites.google.com/ull.edu.es/jsalvmaga-portfolio/masters-degrees-final-project
   # path: 
   year: 2024
   categories: [TFM, Videojuegos]
   description: |
-    Desarrollo de un videojuego controlado mediante *eye tracker* para
+    Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
     emplearlo en la rehabilitación de pacientes con movilidad reducida
     ocasionada por una lesión cerebral.
   image: /images/tfc/magariños2024.png
@@ -19,3 +19,46 @@
     dimensiones a gran escala. Para demostrar la viabilidad del algoritmo, se implementa
     un prototipo de videojuego donde genera un planetoide que el jugador puede explorar.
   image: /images/tfc/cruz2024.png
+- title: Generación procedural de contenido 2D en videojuegos
+  author: Diego Díaz Morón
+  year: 2024
+  categories: [TFG, Videojuegos]
+  description: |
+    Desarrollo de algoritmos para la generación de contenido 2D en videojuegos, utilizando el
+    motor Godot e incorporando métodos de generación de contenido procedural (PCG) para crear
+    el mapa del juego. Se han implementado técnicas como el diagrama de Voronoi y Random Walk
+    para crear un mapa de tipo «mazmorra» en el que el jugador puede moverse.
+- title: "Deep Learning en videojuegos: Generación de animaciones naturales"
+  author: Ayob Asrout Vargas
+  year: 2024
+  categories: [TFG, Videojuegos]
+  description: |
+    El objetivo de este trabajo es hacer una implementación de <i>motion matching</i> y
+    <i>learned motion matching</i> para reproducir animaciones naturales y realistas de
+    personajes virtuales en 3D en tiempo real, a partir de datos de <i>motion capture</i>,
+    en el motor Unity.
+- title: "Uso de herramientas IA y agentes inteligentes en videojuegos"
+  author: "Antonio Felipe Hernández Hernández"
+  year: 2024
+  categories: [TFG, Videojuegos]
+  description: |
+    El objetivo de este trabajo es investigar y evaluar el uso de herramientas de IA para
+    en la creación de contenidos para videojuegos. Con estas herramientas se ha creado
+    un prototipo funcional con un agente capaz de ejecutar tareas concretas en el entorno del juego,
+    empleando técnicas de aprendizaje automático para optimizar su comportamiento.
+- title: "Seguimiento de actividad física en pacientes con EPOC mediante relojes inteligentes"
+  author: Celeste Luis Díaz
+  year: 2024
+  categories: [TFG, Salud]
+  description: |
+    Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
+    enfermedad pulmonar obstructiva crónica (EPOC).
+  image: /images/tfc/luis2024.png
+- title: "Videojuego Roguelike con temática de juego de cartas"
+  author: Jorge Niebla Núñez
+  year: 2024
+  categories: [TFG, Videojuegos]
+  description: |
+    Desarrollo de un videojuego con el motor Unity que incluye enfrentamientos inspirados en las mecánicas
+    del blackjack y del género <i>roguelike</i>. El jugador avanza a través de niveles que requieren el uso
+    de habilidades y conocimientos adquiridos en partidas anteriores para superar desafíos.
