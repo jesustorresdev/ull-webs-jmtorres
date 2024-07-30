@@ -35,6 +35,34 @@ div.quarto-post .listing-author-portfolio {
   }
 }
 
+div.quarto-post .listing-linkedin {
+  color: #fff;
+  background-color: #2780e3;
+  border: solid 1px transparent;
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-size: .65em;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .15em;
+  padding-bottom: .15em;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-top: 4px;
+
+  ::before {
+    font: var(--fa-font-brands);
+    /* font-weight: 900; */
+    content: "\f0e1";
+    padding-right: 0.5em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 div.quarto-post .listing-report {
   color: #fff;
   background-color: #2780e3;
