@@ -7,6 +7,7 @@ lang: es
 
 website:
   title: "Jesús Torres"
+  site-url: "https://jmtorres.webs.ull.es/"
   navbar:
     left:
       - href: index.qmd
