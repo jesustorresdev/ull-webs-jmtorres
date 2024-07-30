@@ -4,7 +4,7 @@
   # path: 
   year: 2024
   categories: [TFM, Videojuegos]
-  thumbnail: images/tfc/magariños2024.webm
+  thumbnail: videos/tfc/magariños2024.webm
   description: |
     Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
     emplearlo en la rehabilitación de pacientes con movilidad reducida
@@ -13,7 +13,7 @@
   author: Ginés Cruz Chávez
   # path: 
   year: 2024
-  thumbnail: images/tfc/cruz2024.webm
+  thumbnail: videos/tfc/cruz2024.webm
   categories: [TFG, Videojuegos]
   description: |
     Desarrollo de un algoritmo de generción procedural para crear planetoides en tres
