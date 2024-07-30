@@ -11,7 +11,8 @@
     ocasionada por una lesión cerebral.
 - title: Generación procedural de planetoides en videojuegos
   author: Ginés Cruz Chávez
-  # path: 
+  # path:
+  linkedin: http://linkedin.com/in/ginés-cruz-chávez-94ba87246 
   year: 2024
   thumbnail: videos/tfc/cruz2024.webm
   categories: [TFG, Videojuegos]
@@ -21,6 +22,7 @@
     un prototipo de videojuego donde genera un planetoide que el jugador puede explorar.
 - title: Generación procedural de contenido 2D en videojuegos
   author: Diego Díaz Morón
+  linkedin: https://linkedin.com/in/diazmorondiego
   year: 2024
   thumbnail: images/tfc/diaz2024.png
   categories: [TFG, Videojuegos]
@@ -40,6 +42,7 @@
     en el motor Unity.
 - title: "Uso de herramientas IA y agentes inteligentes en videojuegos"
   author: "Antonio Felipe Hernández Hernández"
+  linkedin: https://linkedin.com/in/antonio-felipe-hern%C3%A1ndez-hern%C3%A1ndez-b37a142b9/
   year: 2024
   thumbnail: videos/tfc/hernandez2024.webm
   categories: [TFG, Videojuegos]
@@ -51,13 +54,14 @@
 - title: "Seguimiento de actividad física en pacientes con EPOC mediante relojes inteligentes"
   author: Celeste Luis Díaz
   year: 2024
-  categories: [TFG, Datos]
+  categories: [TFG, Datos, Salud]
   thumbnail: images/tfc/luis2024.png
   description: |
     Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
     enfermedad pulmonar obstructiva crónica (EPOC).
 - title: "Videojuego Roguelike con temática de juego de cartas"
   author: Jorge Niebla Núñez
+  linkedin: https://linkedin.com/in/jorge-niebla-n%C3%BA%C3%B1ez/
   year: 2024
   thumbnail: images/tfc/niebla2024.png
   categories: [TFG, Videojuegos]

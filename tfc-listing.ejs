@@ -34,6 +34,9 @@
       <% if (item['author-portfolio']) { %>
         <div class="listing-author-portfolio"><a href="<%- item['author-portfolio'] %>">Portafolio</a></div>
       <% } %>
+      <% if (item.linkedin) { %>
+        <div class="listing-linkedin"><a href="<%- item.linkedin %>">Linkedin</a></div>
+      <% } %>
       <% if (item.path) { %>
         <div class="listing-report"><a href="<%- item.path %>">Memoria</a></div>
       <% } %></div>
