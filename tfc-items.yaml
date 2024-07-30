@@ -58,6 +58,7 @@
 - title: "Videojuego Roguelike con temática de juego de cartas"
   author: Jorge Niebla Núñez
   year: 2024
+  thumbnail: /images/tfc/niebla2024.png
   categories: [TFG, Videojuegos]
   description: |
     Desarrollo de un videojuego con el motor Unity que incluye enfrentamientos inspirados en las mecánicas
