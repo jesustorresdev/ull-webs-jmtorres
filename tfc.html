@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-year','listing-categories','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-author-portfolio','listing-year','listing-categories','listing-description','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-year","listing-categories","listing-description","listing-image"],
+      searchColumns: ["listing-title","listing-author","listing-author-portfolio","listing-year","listing-categories","listing-description","listing-thumbnail"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -184,7 +184,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TFG">TFG <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFM">TFM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Videojuegos">Videojuegos <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Salud">Salud <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFG">TFG <span class="quarto-category-count">(6)</span></div><div class="category" data-category="TFM">TFM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Videojuegos">Videojuegos <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -220,7 +220,11 @@ window.Quarto = {
     <div class="quarto-post image-right" data-index="0" data-categories="TFM,Videojuegos" data-listing-year-sort="2024">
       
       <div class="thumbnail">
-        <img loading="lazy" src="./images/tfc/magariños2024.png" class="thumbnail-image">
+        
+        <video autoplay="" muted="" loop="">
+          <source src="./images/tfc/magariños2024.webm" type="video/webm">
+        </video>
+        
       </div>
       
       <div class="body">
@@ -237,7 +241,7 @@ window.Quarto = {
         </div>
          
         
-        <div class="delink listing-description">Desarrollo de un videojuego controlado mediante *eye tracker* para
+        <div class="delink listing-description">Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
 emplearlo en la rehabilitación de pacientes con movilidad reducida
 ocasionada por una lesión cerebral.
 </div>
@@ -247,13 +251,19 @@ ocasionada por una lesión cerebral.
       <div class="listing-date">2024</div>
       <div class="listing-author">Juan Salvador Magariños Alba</div>
       
+        <div class="listing-author-portfolio"><a href="https://sites.google.com/ull.edu.es/jsalvmaga-portfolio/masters-degrees-final-project">Portafolio</a></div>
+      
       </div>
     </div>
   
     <div class="quarto-post image-right" data-index="1" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
       
       <div class="thumbnail">
-        <img loading="lazy" src="./images/tfc/cruz2024.png" class="thumbnail-image">
+        
+        <video autoplay="" muted="" loop="">
+          <source src="./images/tfc/cruz2024.webm" type="video/webm">
+        </video>
+        
       </div>
       
       <div class="body">
@@ -279,6 +289,159 @@ un prototipo de videojuego donde genera un planetoide que el jugador puede explo
       <div class="metadata">
       <div class="listing-date">2024</div>
       <div class="listing-author">Ginés Cruz Chávez</div>
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="2" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Generación procedural de contenido 2D en videojuegos</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de algoritmos para la generación de contenido 2D en videojuegos, utilizando el
+motor Godot e incorporando métodos de generación de contenido procedural (PCG) para crear
+el mapa del juego. Se han implementado técnicas como el diagrama de Voronoi y Random Walk
+para crear un mapa de tipo «mazmorra» en el que el jugador puede moverse.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2024</div>
+      <div class="listing-author">Diego Díaz Morón</div>
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="3" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Deep Learning en videojuegos: Generación de animaciones naturales</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">El objetivo de este trabajo es hacer una implementación de <i>motion matching</i> y
+<i>learned motion matching</i> para reproducir animaciones naturales y realistas de
+personajes virtuales en 3D en tiempo real, a partir de datos de <i>motion capture</i>,
+en el motor Unity.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2024</div>
+      <div class="listing-author">Ayob Asrout Vargas</div>
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="4" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Uso de herramientas IA y agentes inteligentes en videojuegos</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">El objetivo de este trabajo es investigar y evaluar el uso de herramientas de IA para
+en la creación de contenidos para videojuegos. Con estas herramientas se ha creado
+un prototipo funcional con un agente capaz de ejecutar tareas concretas en el entorno del juego,
+empleando técnicas de aprendizaje automático para optimizar su comportamiento.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2024</div>
+      <div class="listing-author">Antonio Felipe Hernández Hernández</div>
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="5" data-categories="TFG,Salud" data-listing-year-sort="2024">
+      
+      <div class="thumbnail">
+        
+        <img loading="lazy" src="./images/tfc/luis2024.png" class="thumbnail-image">
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Seguimiento de actividad física en pacientes con EPOC mediante relojes inteligentes</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Salud'); return false;">Salud</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
+enfermedad pulmonar obstructiva crónica (EPOC).
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2024</div>
+      <div class="listing-author">Celeste Luis Díaz</div>
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="6" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Videojuego Roguelike con temática de juego de cartas</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de un videojuego con el motor Unity que incluye enfrentamientos inspirados en las mecánicas
+del blackjack y del género <i>roguelike</i>. El jugador avanza a través de niveles que requieren el uso
+de habilidades y conocimientos adquiridos en partidas anteriores para superar desafíos.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2024</div>
+      <div class="listing-author">Jorge Niebla Núñez</div>
       
       </div>
     </div>
