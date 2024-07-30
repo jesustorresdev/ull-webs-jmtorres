@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-author-portfolio','listing-year','listing-categories','listing-description','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-author-portfolio','listing-year','listing-categories','listing-thumbnail','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-author-portfolio","listing-year","listing-categories","listing-description","listing-thumbnail"],
+      searchColumns: ["listing-title","listing-author","listing-author-portfolio","listing-year","listing-categories","listing-thumbnail","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -184,7 +184,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Salud">Salud <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFG">TFG <span class="quarto-category-count">(6)</span></div><div class="category" data-category="TFM">TFM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Videojuegos">Videojuegos <span class="quarto-category-count">(6)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Datos">Datos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TFG">TFG <span class="quarto-category-count">(6)</span></div><div class="category" data-category="TFM">TFM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Videojuegos">Videojuegos <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -221,8 +221,8 @@ window.Quarto = {
       
       <div class="thumbnail">
         
-        <video autoplay="" muted="" loop="">
-          <source src="./images/tfc/magariños2024.webm" type="video/webm">
+        <video autoplay="" muted="" loop="" preload="metadata">
+          <source src="./images/tfc/magariños2024.webm#t=0.1" type="video/webm">
         </video>
         
       </div>
@@ -260,8 +260,8 @@ ocasionada por una lesión cerebral.
       
       <div class="thumbnail">
         
-        <video autoplay="" muted="" loop="">
-          <source src="./images/tfc/cruz2024.webm" type="video/webm">
+        <video autoplay="" muted="" loop="" preload="metadata">
+          <source src="./images/tfc/cruz2024.webm#t=0.1" type="video/webm">
         </video>
         
       </div>
@@ -294,6 +294,12 @@ un prototipo de videojuego donde genera un planetoide que el jugador puede explo
     </div>
   
     <div class="quarto-post image-right" data-index="2" data-categories="TFG,Videojuegos" data-listing-year-sort="2024">
+      
+      <div class="thumbnail">
+        
+        <img loading="lazy" src="./images/tfc/diaz2024.png" class="thumbnail-image">
+        
+      </div>
       
       <div class="body">
         
@@ -383,7 +389,7 @@ empleando técnicas de aprendizaje automático para optimizar su comportamiento.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="5" data-categories="TFG,Salud" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="5" data-categories="TFG,Datos" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -400,7 +406,7 @@ empleando técnicas de aprendizaje automático para optimizar su comportamiento.
         
           <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
         
-          <div class="listing-category" onclick="window.quartoListingCategory('Salud'); return false;">Salud</div>
+          <div class="listing-category" onclick="window.quartoListingCategory('Datos'); return false;">Datos</div>
         
         </div>
          
