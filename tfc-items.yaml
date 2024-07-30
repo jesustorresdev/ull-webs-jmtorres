@@ -4,24 +4,25 @@
   # path: 
   year: 2024
   categories: [TFM, Videojuegos]
+  thumbnail: /images/tfc/magariños2024.webm
   description: |
     Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
     emplearlo en la rehabilitación de pacientes con movilidad reducida
     ocasionada por una lesión cerebral.
-  thumbnail: /images/tfc/magariños2024.webm
 - title: Generación procedural de planetoides en videojuegos
   author: Ginés Cruz Chávez
   # path: 
   year: 2024
+  thumbnail: /images/tfc/cruz2024.webm
   categories: [TFG, Videojuegos]
   description: |
     Desarrollo de un algoritmo de generción procedural para crear planetoides en tres
     dimensiones a gran escala. Para demostrar la viabilidad del algoritmo, se implementa
     un prototipo de videojuego donde genera un planetoide que el jugador puede explorar.
-  thumbnail: /images/tfc/cruz2024.webm
 - title: Generación procedural de contenido 2D en videojuegos
   author: Diego Díaz Morón
   year: 2024
+  thumbnail: /images/tfc/diaz2024.png
   categories: [TFG, Videojuegos]
   description: |
     Desarrollo de algoritmos para la generación de contenido 2D en videojuegos, utilizando el
@@ -49,11 +50,11 @@
 - title: "Seguimiento de actividad física en pacientes con EPOC mediante relojes inteligentes"
   author: Celeste Luis Díaz
   year: 2024
-  categories: [TFG, Salud]
+  categories: [TFG, Datos]
+  thumbnail: /images/tfc/luis2024.png
   description: |
     Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
     enfermedad pulmonar obstructiva crónica (EPOC).
-  thumbnail: /images/tfc/luis2024.png
 - title: "Videojuego Roguelike con temática de juego de cartas"
   author: Jorge Niebla Núñez
   year: 2024

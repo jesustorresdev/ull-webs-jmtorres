@@ -5,8 +5,8 @@
       <% if (item.thumbnail) { %>
       <div class="thumbnail">
         <% if (item.thumbnail.endsWith('.webm')) { %>
-        <video autoplay muted loop>
-          <source src="<%- item.thumbnail %>" type="video/webm">
+        <video autoplay muted loop preload="metadata">
+          <source src="<%- item.thumbnail %>#t=0.1" type="video/webm">
         </video>
         <% } else { %>
         <img loading="lazy" src="<%- item.thumbnail %>" class="thumbnail-image"/>
