@@ -34,6 +34,7 @@
 - title: "Deep Learning en videojuegos: Generación de animaciones naturales"
   author: Ayob Asrout Vargas
   year: 2024
+  thumbnail: images/tfc/asrout2024.gif
   categories: [TFG, Videojuegos]
   description: |
     El objetivo de este trabajo es hacer una implementación de <i>motion matching</i> y
