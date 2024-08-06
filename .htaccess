@@ -45,7 +45,7 @@ RewriteRule ^me/2014/02/capturando-secuencias-de-video-con-qt/$ https://jesustor
 RewriteRule ^me/2013/05/servicios-y-demonios-en-linux/$ https://jesustorres.es/servicios-y-demonios-en-linux [L,R=301]
 RewriteRule ^me/2013/05/resource-interchange-file-format/$ https://jesustorres.es/resource-interchange-file-format [L,R=301]
 RewriteRule ^me/2013/04/make-install-con-qmake/$ https://jesustorres.es/make-install-con-qmake [L,R=301]
-RewriteRule ^me/2013/04/aplicaciones-de-consola-con-qt/$ https://jesustorres.es/aplicaciones-de-consola-con-qt [L,R=301]
+RewriteRule ^me/2013/04/aplicaciones-de-consola-con-qt(/)?$ https://jesustorres.es/aplicaciones-de-consola-con-qt [L,R=301]
 RewriteRule ^me/2013/03/uso-de-la-memoria-como-un-dispositivo-de-es-con-qbuffer/$ https://jesustorres.es/uso-de-la-memoria-como-un-dispositivo-de-es-con-qbuffer [L,R=301]
 RewriteRule ^me/2013/03/implementando-un-protocolo-con-protocol-buffers/$ https://jesustorres.es/implementando-un-protocolo-con-protocol-buffers [L,R=301]
 RewriteRule ^me/2013/02/deteccion-de-movimiento-con-opencv/$ https://jesustorres.es/deteccion-de-movimiento-con-opencv [L,R=301]

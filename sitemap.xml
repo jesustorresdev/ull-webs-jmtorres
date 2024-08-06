@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jmtorres.webs.ull.es/ssoo.html</loc>
-    <lastmod>2024-08-06T09:55:00.474Z</lastmod>
-  </url>
-  <url>
     <loc>https://jmtorres.webs.ull.es/tutorias.html</loc>
-    <lastmod>2024-08-06T09:55:00.482Z</lastmod>
+    <lastmod>2024-08-06T10:01:07.628Z</lastmod>
   </url>
   <url>
-    <loc>https://jmtorres.webs.ull.es/tfc.html</loc>
-    <lastmod>2024-08-06T09:55:00.482Z</lastmod>
+    <loc>https://jmtorres.webs.ull.es/ssoo.html</loc>
+    <lastmod>2024-08-06T10:01:07.620Z</lastmod>
   </url>
   <url>
     <loc>https://jmtorres.webs.ull.es/index.html</loc>
-    <lastmod>2024-08-06T09:55:00.474Z</lastmod>
+    <lastmod>2024-08-06T10:01:07.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmtorres.webs.ull.es/tfc.html</loc>
+    <lastmod>2024-08-06T10:01:07.628Z</lastmod>
   </url>
 </urlset>
