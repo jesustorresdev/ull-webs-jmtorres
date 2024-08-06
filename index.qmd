@@ -1,5 +1,6 @@
 ---
 title: "Jesús Torres"
+canonical: https://jmtorres.webs.ull.es/
 about: 
   template: jolla
   image: images/profile.jpg

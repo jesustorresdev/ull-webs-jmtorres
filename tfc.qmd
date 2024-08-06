@@ -2,7 +2,7 @@
 title: Trabajos finales
 listing:
   id: tfc-listing
-  template: tfc-listing.ejs
+  template: templates/tfc-listing.ejs
   type: default
   categories: true
   contents: tfc-items.yaml
