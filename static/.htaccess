@@ -56,5 +56,6 @@ RewriteRule ^me/2013/12/aprendiendo-scrum-en-el-dia-del-centro/$ https://jesusto
 RewriteRule ^me/2013/02/introduccion-al-uso-de-hilos-en-qt/$ https://jesustorres.es/introduccion-al-uso-de-hilos-en-qt [L,R=301]
 RewriteRule ^me/2013/02/layouts-en-qt-organizacion-de-controles/$ https://jesustorres.es/layouts-en-qt-organizacion-de-controles [L,R=301]
 RewriteRule ^me/2013/02/como-usar-qmovie-en-qt/$ https://jesustorres.es/como-usar-qmovie-en-qt [L,R=301]
+RewriteRule ^me/soa(/)?$ https://jesustorres.hashnode.dev/tag/ull-esit-soa [L,R=301]
 RewriteRule ^(me/)?tutor(i|í)a(s)? /tutorias.html [L,R=301]
 </IfModule>
