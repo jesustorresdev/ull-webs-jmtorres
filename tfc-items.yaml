@@ -1,7 +1,7 @@
 - title: Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral
   author: Juan Salvador Magariños Alba
   author-portfolio: https://sites.google.com/ull.edu.es/jsalvmaga-portfolio/masters-degrees-final-project
-  # path: 
+  report: https://riull.ull.es/xmlui/handle/915/39215
   year: 2024
   categories: [TFM, Videojuegos]
   thumbnail: videos/tfc/magariños2024.webm
@@ -11,7 +11,7 @@
     ocasionada por una lesión cerebral.
 - title: Generación procedural de planetoides en videojuegos
   author: Ginés Cruz Chávez
-  # path:
+  report: https://riull.ull.es/xmlui/handle/915/40001
   linkedin: http://linkedin.com/in/ginés-cruz-chávez-94ba87246 
   year: 2024
   thumbnail: videos/tfc/cruz2024.webm
@@ -23,6 +23,7 @@
     dónde puede recoger recursos.
 - title: Generación procedural de contenido 2D en videojuegos
   author: Diego Díaz Morón
+  report: https://riull.ull.es/xmlui/handle/915/39978
   linkedin: https://linkedin.com/in/diazmorondiego
   year: 2024
   thumbnail: images/tfc/diaz2024.png
