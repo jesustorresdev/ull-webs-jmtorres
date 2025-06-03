@@ -3,7 +3,7 @@ title: "Jesús Torres"
 canonical: https://jmtorres.webs.ull.es/
 about: 
   template: jolla
-  image: images/profile.jpg
+  image: assets/profile.jpg
   links:
     - icon: twitter
       text: twitter

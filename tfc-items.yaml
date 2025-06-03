@@ -4,7 +4,7 @@
   # linkedin: https://linkedin.com/in/alejandro-perez-buquerin-0b1a4b1b6
   year: 2025
   categories: [TFG, Videojuegos, Datos, Unity]
-  #thumbnail: images/tfc/buquerin2025.png
+  #thumbnail: assets/tfc/buquerin2025.png
   description: |
     Desarrollo de un visualizador y analizador de partidas del videojuego Counter-Strike: Global Offensive
     utilizando el motor Unity. El objetivo es crear una herramienta que permita a los jugadores analizar
@@ -26,7 +26,7 @@
   # linkedin: https://linkedin.com/in/juan-rodriguez-suarez-0b1a4b1b6
   year: 2025
   categories: [TFG, Videojuegos, GenIA, Unity]
-  # thumbnail: images/tfc/rodriguez2025.png
+  # thumbnail: assets/tfc/rodriguez2025.png
   description: |
     Este trabajo explora la aplicación de modelos de lenguaje (LLM) en el desarrollo de videojuegos, centrándose
     en la generación de diálogos y narrativas dinámicas. Se implementa un prototipo que utiliza un modelo
@@ -38,7 +38,7 @@
   report: https://riull.ull.es/xmlui/handle/915/39215
   year: 2024
   categories: [TFM, Videojuegos, Salud, Unity]
-  thumbnail: videos/tfc/magariños2024.webm
+  thumbnail: assets/tfc/magariños2024.webm
   description: |
     Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
     emplearlo en la rehabilitación de pacientes con movilidad reducida
@@ -48,7 +48,7 @@
   report: https://riull.ull.es/xmlui/handle/915/40001
   linkedin: http://linkedin.com/in/ginés-cruz-chávez-94ba87246 
   year: 2024
-  thumbnail: videos/tfc/cruz2024.webm
+  thumbnail: assets/tfc/cruz2024.webm
   categories: [TFG, Videojuegos, PCG, Unity]
   description: |
     Desarrollo de un algoritmo de generación procedural para crear planetoides en tres
@@ -60,7 +60,7 @@
   report: https://riull.ull.es/xmlui/handle/915/39978
   linkedin: https://linkedin.com/in/diazmorondiego
   year: 2024
-  thumbnail: images/tfc/diaz2024.png
+  thumbnail: assets/tfc/diaz2024.png
   categories: [TFG, Videojuegos, PCG, Unity]
   description: |
     Desarrollo de algoritmos para la generación de contenido 2D en videojuegos, utilizando el
@@ -70,7 +70,7 @@
 - title: "Deep Learning en videojuegos: Generación de animaciones naturales"
   author: Ayob Asrout Vargas
   year: 2024
-  thumbnail: images/tfc/asrout2024.gif
+  thumbnail: assets/tfc/asrout2024.gif
   categories: [TFG, Videojuegos, Animación, Unity]
   description: |
     El objetivo de este trabajo es hacer una implementación de <i>motion matching</i> y
@@ -81,7 +81,7 @@
   author: "Antonio Felipe Hernández Hernández"
   linkedin: https://linkedin.com/in/antonio-felipe-hern%C3%A1ndez-hern%C3%A1ndez-b37a142b9/
   year: 2024
-  thumbnail: videos/tfc/hernandez2024.webm
+  thumbnail: assets/tfc/hernandez2024.webm
   categories: [TFG, Videojuegos, Unity, IA]
   description: |
     El objetivo de este trabajo es investigar y evaluar el uso de herramientas de IA para
@@ -92,7 +92,7 @@
   author: Celeste Luis Díaz
   year: 2024
   categories: [TFG, Datos, Salud, Web]
-  thumbnail: images/tfc/luis2024.png
+  thumbnail: assets/tfc/luis2024.png
   description: |
     Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
     enfermedad pulmonar obstructiva crónica (EPOC).
@@ -100,7 +100,7 @@
   author: Jorge Niebla Núñez
   linkedin: https://linkedin.com/in/jorge-niebla-n%C3%BA%C3%B1ez/
   year: 2024
-  thumbnail: images/tfc/niebla2024.png
+  thumbnail: assets/tfc/niebla2024.png
   categories: [TFG, Videojuegos, Unity, Roguelike]
   description: |
     Desarrollo de un videojuego con el motor Unity que incluye enfrentamientos inspirados en las mecánicas

@@ -1,7 +1,8 @@
 project:
   type: website
-  post-render:
-    - "cp -rnv static/. _site/"
+  resources: 
+    - /assets
+    - .htaccess
 
 lang: es
 
