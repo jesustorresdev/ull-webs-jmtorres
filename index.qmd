@@ -11,6 +11,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/jesusmtorres
+    - icon: joystick
+      text: Unreal
+      href: https://dev.epicgames.com/community/profile/kPQ9/jesustorresdev
     - icon: github
       text: Github
       href: https://github.com/jesustorresdev
@@ -19,4 +22,4 @@ about:
       href: https://jesustorres.es/
 ---
 
-Docente e investigador en el departamento de Ingeniería Informática de la Universidad de La Laguna y Director Académico del Máster Universitario en Desarrollo de Videojuegos (Unreal Authorized Instructor)
+**Profesor Titular** del Departamento de Ingeniería Informática de la Universidad de La Laguna, **Director Académico del Máster Universitario en Desarrollo de Videojuegos** y **Unreal Authorized Instructor** nivel Gold.
