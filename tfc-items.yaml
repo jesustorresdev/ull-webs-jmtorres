@@ -12,14 +12,15 @@
 - title: "Generación procedural de terrenos"
   author: "Marco Napierski"
   # report: https://riull.ull.es/xmlui/handle/915/40003
-  # linkedin: https://linkedin.com/in/marco-napierski-0b1a4b1b6
+  linkedin: https://linkedin.com/in/marco-napierski-226328342/
   year: 2025
   categories: [TFG, Videojuegos, PCG, Unreal]
-  #thumbnail: images/tfc/napierski2025.png
+  thumbnail: assets/tfc/napierski2025.webm
   description: |
     Desarrollo de un sistema de generación procedural de terrenos para videojuegos, utilizando
     el motor Unreal Engine 5. El objetivo es crear paisajes extensos y variados de forma dinámica, eficiente y
-    configurable.
+    configurable. En la miniatura se muestra un ejemplo pero con una distancia de generación muy reducida
+    para que se pueda apreciar cómo se genera el terreno en tiempo real.
 - title: "Aplicación de modelos del lenguaje en videojuegos"
   author: "Juan Rodríguez Suárez"
   # report: https://riull.ull.es/xmlui/handle/915/40004
