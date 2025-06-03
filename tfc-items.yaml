@@ -1,9 +1,43 @@
+- title: "Visualizador y analizador de partidas de Counter-Strike en Unity"
+  author: "Alejandro Pérez Buquerín"
+  # report: https://riull.ull.es/xmlui/handle/915/40002
+  # linkedin: https://linkedin.com/in/alejandro-perez-buquerin-0b1a4b1b6
+  year: 2025
+  categories: [TFG, Videojuegos, Datos, Unity]
+  #thumbnail: images/tfc/buquerin2025.png
+  description: |
+    Desarrollo de un visualizador y analizador de partidas del videojuego Counter-Strike: Global Offensive
+    utilizando el motor Unity. El objetivo es crear una herramienta que permita a los jugadores analizar
+    sus partidas y mejorar su rendimiento.
+- title: "Generación procedural de terrenos"
+  author: "Marco Napierski"
+  # report: https://riull.ull.es/xmlui/handle/915/40003
+  # linkedin: https://linkedin.com/in/marco-napierski-0b1a4b1b6
+  year: 2025
+  categories: [TFG, Videojuegos, PCG, Unreal]
+  #thumbnail: images/tfc/napierski2025.png
+  description: |
+    Desarrollo de un sistema de generación procedural de terrenos para videojuegos, utilizando
+    el motor Unreal Engine 5. El objetivo es crear paisajes extensos y variados de forma dinámica, eficiente y
+    configurable.
+- title: "Aplicación de modelos del lenguaje en videojuegos"
+  author: "Juan Rodríguez Suárez"
+  # report: https://riull.ull.es/xmlui/handle/915/40004
+  # linkedin: https://linkedin.com/in/juan-rodriguez-suarez-0b1a4b1b6
+  year: 2025
+  categories: [TFG, Videojuegos, GenIA, Unity]
+  # thumbnail: images/tfc/rodriguez2025.png
+  description: |
+    Este trabajo explora la aplicación de modelos de lenguaje (LLM) en el desarrollo de videojuegos, centrándose
+    en la generación de diálogos y narrativas dinámicas. Se implementa un prototipo que utiliza un modelo
+    de lenguaje para crear interacciones más inmersivas y personalizadas entre los jugadores y los personajes
+    del juego.
 - title: Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral
   author: Juan Salvador Magariños Alba
   author-portfolio: https://sites.google.com/ull.edu.es/jsalvmaga-portfolio/masters-degrees-final-project
   report: https://riull.ull.es/xmlui/handle/915/39215
   year: 2024
-  categories: [TFM, Videojuegos]
+  categories: [TFM, Videojuegos, Salud, Unity]
   thumbnail: videos/tfc/magariños2024.webm
   description: |
     Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
@@ -15,7 +49,7 @@
   linkedin: http://linkedin.com/in/ginés-cruz-chávez-94ba87246 
   year: 2024
   thumbnail: videos/tfc/cruz2024.webm
-  categories: [TFG, Videojuegos]
+  categories: [TFG, Videojuegos, PCG, Unity]
   description: |
     Desarrollo de un algoritmo de generación procedural para crear planetoides en tres
     dimensiones a gran escala. Para demostrar la viabilidad del algoritmo, se implementa
@@ -27,7 +61,7 @@
   linkedin: https://linkedin.com/in/diazmorondiego
   year: 2024
   thumbnail: images/tfc/diaz2024.png
-  categories: [TFG, Videojuegos]
+  categories: [TFG, Videojuegos, PCG, Unity]
   description: |
     Desarrollo de algoritmos para la generación de contenido 2D en videojuegos, utilizando el
     motor Godot e incorporando métodos de generación de contenido procedural (PCG) para crear
@@ -37,7 +71,7 @@
   author: Ayob Asrout Vargas
   year: 2024
   thumbnail: images/tfc/asrout2024.gif
-  categories: [TFG, Videojuegos]
+  categories: [TFG, Videojuegos, Animación, Unity]
   description: |
     El objetivo de este trabajo es hacer una implementación de <i>motion matching</i> y
     <i>learned motion matching</i> para reproducir animaciones naturales y realistas de
@@ -48,7 +82,7 @@
   linkedin: https://linkedin.com/in/antonio-felipe-hern%C3%A1ndez-hern%C3%A1ndez-b37a142b9/
   year: 2024
   thumbnail: videos/tfc/hernandez2024.webm
-  categories: [TFG, Videojuegos]
+  categories: [TFG, Videojuegos, Unity, IA]
   description: |
     El objetivo de este trabajo es investigar y evaluar el uso de herramientas de IA para
     en la creación de contenidos para videojuegos. Con estas herramientas se ha creado
@@ -57,7 +91,7 @@
 - title: "Seguimiento de actividad física en pacientes con EPOC mediante relojes inteligentes"
   author: Celeste Luis Díaz
   year: 2024
-  categories: [TFG, Datos, Salud]
+  categories: [TFG, Datos, Salud, Web]
   thumbnail: images/tfc/luis2024.png
   description: |
     Desarrollo de una aplicación para la recogida y análisis de datos de actividad física de pacientes con
@@ -67,7 +101,7 @@
   linkedin: https://linkedin.com/in/jorge-niebla-n%C3%BA%C3%B1ez/
   year: 2024
   thumbnail: images/tfc/niebla2024.png
-  categories: [TFG, Videojuegos]
+  categories: [TFG, Videojuegos, Unity, Roguelike]
   description: |
     Desarrollo de un videojuego con el motor Unity que incluye enfrentamientos inspirados en las mecánicas
     del blackjack y del género <i>roguelike</i>. El jugador avanza a través de niveles que requieren el uso
