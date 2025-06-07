@@ -12,20 +12,16 @@ if (!file_exists($configFile)) {
 
 require_once $configFile;
 require_once __DIR__ . '/ZipSync.php';
+require_once __DIR__ . '/Logger.php';
 
+// Initialize logger
+$logFile = defined('LOG_FILE') && LOG_FILE ? LOG_FILE : __DIR__ . '/deploy.log';
+$logger = new Logger($logFile, DEBUG_MODE);
 ini_set('display_errors', 'Off');
-if (ENABLE_LOGS) {
-    ini_set('log_errors', 'On');
-    error_reporting(E_ALL);
-    if (defined('LOG_FILE') && LOG_FILE) {
-        ini_set('error_log', LOG_FILE);
-    }
-} else {
-    ini_set('log_errors', 'Off');
-    error_reporting(0);
-}
 
 function checkRequiredExtensions() {
+    global $logger;
+    
     $required = ['curl', 'zip', 'json'];
     $missing = [];
     
@@ -36,27 +32,34 @@ function checkRequiredExtensions() {
     }
     
     if (!empty($missing)) {
-        throw new Exception('Missing required PHP extensions: ' . implode(', ', $missing));
+        $message = 'Missing required PHP extensions: ' . implode(', ', $missing);
+        $logger->error($message);
+        throw new Exception($message);
     }
     
-    trigger_error('All required extensions are available', E_USER_NOTICE);
+    $logger->info('All required extensions are available');
 }
 
 function createUniqueTempDir($baseTempDir) {
+    global $logger;
+    
     $uniqueId = uniqid('deploy_', true) . '_' . getmypid();
     $uniqueTempDir = rtrim($baseTempDir, '/') . '/' . $uniqueId;
     
     if (!is_dir($uniqueTempDir)) {
         if (!mkdir($uniqueTempDir, 0755, true)) {
+            $logger->error("Failed to create temporary directory: $uniqueTempDir");
             throw new Exception("Failed to create temporary directory: $uniqueTempDir");
         }
     }
     
-    trigger_error("Created unique temporary directory: $uniqueTempDir", E_USER_NOTICE);
+    $logger->info("Created unique temporary directory: $uniqueTempDir");
     return $uniqueTempDir;
 }
 
 function cleanupTempDir($tempDir) {
+    global $logger;
+    
     if (is_dir($tempDir)) {
         $escapedPath = escapeshellarg($tempDir);
         $output = [];
@@ -64,43 +67,53 @@ function cleanupTempDir($tempDir) {
         exec("rm -rf $escapedPath 2>&1", $output, $returnCode);
         
         if ($returnCode !== 0) {
-            trigger_error("Warning: Failed to cleanup temp directory: " . implode("\n", $output), E_USER_WARNING);
+            $logger->warning("Failed to cleanup temp directory: " . implode("\n", $output));
         } else {
-            trigger_error("Temp directory cleaned up successfully: $tempDir", E_USER_NOTICE);
+            $logger->info("Temp directory cleaned up successfully: $tempDir");
         }
     }
 }
 
 function validateGitHubWebhook($payload, $signature, $secret) {
+    if (empty($signature)) {
+        return false;
+    }
     $expected = 'sha256=' . hash_hmac('sha256', $payload, $secret);
     return hash_equals($expected, $signature);
 }
 
 function validateRepository($payload) {
+    global $logger;
+    
     if (empty(REMOTE_REPOSITORY)) {
-        trigger_error("REMOTE_REPOSITORY not configured - deployment rejected", E_USER_ERROR);
+        $logger->error("REMOTE_REPOSITORY not configured - deployment rejected");
         return false;
     }
     
     $incomingRepo = $payload['repository']['full_name'] ?? '';
     
     if ($incomingRepo !== REMOTE_REPOSITORY) {
-        trigger_error("Repository mismatch - incoming: '$incomingRepo', expected: '" . REMOTE_REPOSITORY . "'", E_USER_WARNING);
+        $logger->warning("Repository mismatch", [
+            'incoming' => $incomingRepo,
+            'expected' => REMOTE_REPOSITORY
+        ]);
         return false;
     }
     
-    trigger_error("Repository validated: $incomingRepo", E_USER_NOTICE);
+    $logger->info("Repository validated: $incomingRepo");
     return true;
 }
 
 function downloadRepositoryZip($repoUrl, $branch, $tempDir) {
-    trigger_error("Downloading repository: $repoUrl (branch: $branch)", E_USER_NOTICE);
+    global $logger;
+    
+    $logger->info("Downloading repository: $repoUrl (branch: $branch)");
 
     // URL to download ZIP
     $zipUrl = str_replace('.git', '', $repoUrl) . "/archive/refs/heads/$branch.zip";
     $zipFile = "$tempDir/repo.zip";
     
-    trigger_error("Downloading from: $zipUrl", E_USER_NOTICE);
+    $logger->info("Downloading from: $zipUrl");
     
     // Configure cURL
     $ch = curl_init();
@@ -108,7 +121,9 @@ function downloadRepositoryZip($repoUrl, $branch, $tempDir) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_USERAGENT, 'JesusTorresDev-Web-Deploy/1.0');
     curl_setopt($ch, CURLOPT_TIMEOUT, 300); // 5 minutes timeout
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30); // Connection timeout
     
     $zipContent = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -120,51 +135,65 @@ function downloadRepositoryZip($repoUrl, $branch, $tempDir) {
         if ($curlError) {
             $errorMsg .= ", cURL Error: $curlError";
         }
+        $logger->error($errorMsg, ['url' => $zipUrl, 'http_code' => $httpCode]);
         throw new Exception($errorMsg);
     }
     
     if (file_put_contents($zipFile, $zipContent) === false) {
+        $logger->error("Error saving ZIP file to: $zipFile");
         throw new Exception("Error saving ZIP file");
     }
     
-    trigger_error("ZIP downloaded successfully: " . filesize($zipFile) . " bytes", E_USER_NOTICE);
+    $fileSize = filesize($zipFile);
+    $logger->info("ZIP downloaded successfully", [
+        'file_size' => $fileSize . ' bytes'
+    ]);
 
     return $zipFile;
 }
 
 function syncToWebRoot($zipFile, $targetDir, $excludeList, $sourceDir = '') {
-    trigger_error("Starting ZipSync from $zipFile to $targetDir", E_USER_NOTICE);
+    global $logger;
     
-    if (!empty($sourceDir)) {
-        trigger_error("Using source directory: $sourceDir", E_USER_NOTICE);
-    }
+    $logger->info("Starting ZipSync", [
+        'zip_file' => $zipFile,
+        'target_dir' => $targetDir,
+        'source_dir' => $sourceDir ?: 'root',
+        'exclusions' => $excludeList
+    ]);
     
     if (!empty($excludeList)) {
-        trigger_error("Excluding: " . implode(', ', $excludeList), E_USER_NOTICE);
+        $logger->debug("Exclusion list", ['exclusions' => $excludeList]);
     }
     
     try {
+        $startTime = microtime(true);
         $zipSync = new ZipSync($zipFile, $targetDir, $excludeList, $sourceDir);
         $zipSync->sync();
-        
-        trigger_error("ZipSync completed successfully", E_USER_NOTICE);
-        
+
+        $logger->info("ZipSync completed successfully");
         return ['status' => 'success'];
         
     } catch (Exception $e) {
+        $logger->error("ZipSync error: " . $e->getMessage());
         throw new Exception("ZipSync error: " . $e->getMessage());
     }
 }
 
 function deployFromGitHub($payload) {
+    global $logger;
+    
     $tempDir = null;
     
     try {        
-        trigger_error("=== STARTING DEPLOYMENT ===", E_USER_NOTICE);
-        trigger_error("Repository: {$payload['repository']['full_name']}", E_USER_NOTICE);
-        trigger_error("Branch: {$payload['ref']}", E_USER_NOTICE);
-        trigger_error("Commit: {$payload['head_commit']['id']}", E_USER_NOTICE);
-        trigger_error("Message: {$payload['head_commit']['message']}", E_USER_NOTICE);
+        $logger->info("=== STARTING DEPLOYMENT ===");
+        $logger->info("Repository deployment details", [
+            'repository' => $payload['repository']['full_name'],
+            'branch' => $payload['ref'],
+            'commit' => $payload['head_commit']['id'],
+            'message' => $payload['head_commit']['message'],
+            'pusher' => $payload['pusher']['name'] ?? 'unknown'
+        ]);
         
         $repoUrl = 'https://github.com/' . REMOTE_REPOSITORY . '.git';
         $tempDir = createUniqueTempDir(TEMP_DIR);
@@ -177,24 +206,21 @@ function deployFromGitHub($payload) {
         // Get exclude list
         $excludeList = defined('EXCLUDE_LIST') ? EXCLUDE_LIST : [];
         
-        // Get source directory from GitHub ZIP (format: repo-branch)
-        $repoName = basename(REMOTE_REPOSITORY);
-        
         // Synchronize using ZipSync
         $syncResult = syncToWebRoot($zipFile, WEB_ROOT, $excludeList, ZIP_DIR);
         
         // Clean temporary directory
         cleanupTempDir($tempDir);
-
-        trigger_error("=== DEPLOYMENT COMPLETED SUCCESSFULLY ===", E_USER_NOTICE);
+        
+        $logger->info("=== DEPLOYMENT COMPLETED SUCCESSFULLY ===");
         
         return [
             'status' => 'success', 
-            'message' => 'Deployment completed successfully',
+            'message' => 'Deployment completed successfully'
         ];
         
     } catch (Exception $e) {
-        trigger_error("ERROR: " . $e->getMessage(), E_USER_ERROR);
+        $logger->error("Deployment failed: " . $e->getMessage());
         
         // Cleanup on error
         if (isset($tempDir) && is_dir($tempDir)) {
@@ -211,19 +237,25 @@ function deployFromGitHub($payload) {
 // === MAIN ENTRY POINT ===
 
 try {
+    $logger->info("Webhook request received", [
+        'method' => $_SERVER['REQUEST_METHOD'],
+        'event' => $_SERVER['HTTP_X_GITHUB_EVENT'] ?? 'unknown',
+        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'unknown'
+    ]);
+    
     checkRequiredExtensions();
     
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         http_response_code(405);
-        trigger_error("Method not allowed: {$_SERVER['REQUEST_METHOD']}", E_USER_WARNING);
+        $logger->warning("Method not allowed: {$_SERVER['REQUEST_METHOD']}");
         die(json_encode(['error' => 'Method not allowed']));
     }
 
     $event = $_SERVER['HTTP_X_GITHUB_EVENT'] ?? '';
     if ($event !== 'push') {
-        trigger_error("Event ignored: $event", E_USER_NOTICE);
-        echo json_encode(['status' => 'ignored', 'message' => 'Not a push event']);
-        exit;
+        http_response_code(200);
+        $logger->info("Event ignored: $event");
+        die(json_encode(['status' => 'ignored', 'message' => 'Not a push event']));
     }
     
     $payload = file_get_contents('php://input');
@@ -231,27 +263,30 @@ try {
     
     if (!validateGitHubWebhook($payload, $signature, WEBHOOK_SECRET)) {
         http_response_code(401);
-        trigger_error("Invalid webhook - signature does not match", E_USER_WARNING);
+        $logger->warning("Invalid webhook signature");
         die(json_encode(['error' => 'Invalid webhook signature']));
     }
     
     $payloadData = json_decode($payload, true);
     if (!$payloadData) {
         http_response_code(400);
-        trigger_error("Invalid JSON payload", E_USER_ERROR);
+        $logger->error("Invalid JSON payload", ['json_error' => json_last_error_msg()]);
         die(json_encode(['error' => 'Invalid JSON payload']));
     }
 
     if (!validateRepository($payloadData)) {
-        trigger_error("Repository validation failed", E_USER_WARNING);
-        echo json_encode(['status' => 'ignored', 'message' => 'Repository not allowed']);
-        exit;
+        http_response_code(200);
+        $logger->warning("Repository validation failed");
+        die(json_encode(['status' => 'ignored', 'message' => 'Repository not allowed']));
     }
 
     if ($payloadData['ref'] !== "refs/heads/" . TARGET_BRANCH) {
-        trigger_error("Push ignored - branch: {$payloadData['ref']} (expected: refs/heads/" . TARGET_BRANCH . ")", E_USER_NOTICE);
-        echo json_encode(['status' => 'ignored', 'message' => 'Branch does not match']);
-        exit;
+        $logger->info("Push ignored - wrong branch", [
+            'received_branch' => $payloadData['ref'],
+            'expected_branch' => "refs/heads/" . TARGET_BRANCH
+        ]);
+        http_response_code(200); // Consider 200 for ignored events
+        die(json_encode(['status' => 'ignored', 'message' => 'Branch does not match']));
     }
     
     $result = deployFromGitHub($payloadData);
@@ -260,8 +295,13 @@ try {
     echo json_encode($result);
     
 } catch (Exception $e) {
-    trigger_error("Fatal error: " . $e->getMessage(), E_USER_ERROR);
+    $logger->error("Fatal error: " . $e->getMessage(), [
+        'file' => $e->getFile(),
+        'line' => $e->getLine(),
+        'trace' => $e->getTraceAsString()
+    ]);
     http_response_code(500);
-    echo json_encode(['error' => 'Internal server error', 'message' => $e->getMessage()]);
+    $errorMessage = defined('DEBUG_MODE') && DEBUG_MODE ? $e->getMessage() : 'Internal server error';
+    echo json_encode(['error' => 'Internal server error', 'message' => $errorMessage]);
 }
 ?>

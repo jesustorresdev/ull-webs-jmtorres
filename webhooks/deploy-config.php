@@ -19,16 +19,17 @@ define('TARGET_BRANCH', 'gh-pages');
 define('ZIP_DIR', 'ull-webs-jmtorres-' . TARGET_BRANCH);
 
 // Web root directory where the site will be deployed
-define('WEB_ROOT', dirname(dirname(__FILE__)));
+define('WEB_ROOT', dirname(__DIR__));
 
 // Temporary directory for downloads and extraction
 define('TEMP_DIR', '/tmp/webhook_deploy');
 
 // Log file path (make sure web server has write permissions)
-define('LOG_FILE', WEB_ROOT . '/webhook_deploy.log');
+define('LOG_FILE', dirname(__DIR__) . '/webhook_deploy.log');
 
-// Enable or disable logging (true/false)
-define('ENABLE_LOGS', true);
+// Enable or disable debug mode
+// Set to true for detailed logging, false for production
+define('DEBUG_MODE', true);
 
 // Files and directories to exclude from sync
 // Use patterns supported by rsync --exclude
