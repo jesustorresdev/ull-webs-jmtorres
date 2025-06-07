@@ -7,86 +7,60 @@ div.quarto-post .thumbnail video {
   width: 100%;
 }
 
-div.quarto-post .listing-author-portfolio {
+/* Base styles for clickable buttons */
+.listing-button {
   color: #fff;
   background-color: #2780e3;
   border: solid 1px transparent;
   border-radius: .25rem;
   text-transform: uppercase;
   font-size: .65em;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-top: .15em;
-  padding-bottom: .15em;
+  padding: .15em .5em;
   cursor: pointer;
   margin-right: 4px;
   margin-top: 4px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
 
-  ::before {
+  &:hover {
+    background-color: #1e6cc7;
+    /* transform: translate(1px, -1px); */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  span {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+div.quarto-post .listing-author-portfolio {
+  &::before {
     font: var(--fa-font-solid);
-    /* font-weight: 900; */
     content: "\f0b1";
     padding-right: 0.5em;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
   }
 }
 
 div.quarto-post .listing-linkedin {
-  color: #fff;
-  background-color: #2780e3;
-  border: solid 1px transparent;
-  border-radius: .25rem;
-  text-transform: uppercase;
-  font-size: .65em;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-top: .15em;
-  padding-bottom: .15em;
-  cursor: pointer;
-  margin-right: 4px;
-  margin-top: 4px;
-
-  ::before {
+  &::before {
     font: var(--fa-font-brands);
-    /* font-weight: 900; */
     content: "\f0e1";
     padding-right: 0.5em;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
   }
 }
 
 div.quarto-post .listing-report {
-  color: #fff;
-  background-color: #2780e3;
-  border: solid 1px transparent;
-  border-radius: .25rem;
-  text-transform: uppercase;
-  font-size: .65em;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-top: .15em;
-  padding-bottom: .15em;
-  cursor: pointer;
-  margin-right: 4px;
-  margin-top: 4px;
-
-  ::before {
+  &::before {
     font: var(--fa-font-solid);
-    /* font-weight: 900; */
     content: "\f1c1";
     padding-right: 0.5em;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
   }
 }

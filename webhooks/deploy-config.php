@@ -7,7 +7,7 @@
  */
 
 // Secret token for webhook validation (must match GitHub webhook secret)
-define('WEBHOOK_SECRET', 'PewMc6h6KdFmWvYaV04GOMHLa0gryFMOgPmGcP5dEoYGQsmVZxzU92hwyQDpQWz9');
+define('WEBHOOK_SECRET', 'your_secret_token_here');
 
 // Repository to deploy from (format: 'username/repository-name')
 define('REMOTE_REPOSITORY', 'jesustorresdev/ull-webs-jmtorres');
@@ -29,11 +29,11 @@ define('LOG_FILE', dirname(__DIR__) . '/webhook_deploy.log');
 
 // Enable or disable debug mode
 // Set to true for detailed logging, false for production
-define('DEBUG_MODE', true);
+define('DEBUG_MODE', false);
 
 // Files and directories to exclude from sync
-// Use patterns supported by rsync --exclude
 define('EXCLUDE_LIST', [
-    'webhooks'
+    'webhooks',
+    'webhook_deploy.log'
 ]);
 ?>
