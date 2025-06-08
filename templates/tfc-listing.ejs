@@ -4,12 +4,18 @@
     <div class="quarto-post image-right" <%= metadataAttrs(item) %>>
       <% if (item.thumbnail) { %>
       <div class="thumbnail">
-        <% if (item.thumbnail.endsWith('.webm')) { %>
-        <video autoplay muted loop preload="metadata">
-          <source src="<%- item.thumbnail %>#t=0.1" type="video/webm">
-        </video>
-        <% } else { %>
-        <img loading="lazy" src="<%- item.thumbnail %>" class="thumbnail-image"/>
+        <% if (item.video) { %>
+          <a href="<%- item.video %>" target="_blank" rel="noopener">
+        <% } %>
+          <% if (item.thumbnail.endsWith('.webm')) { %>
+          <video autoplay muted loop preload="metadata">
+            <source src="<%- item.thumbnail %>#t=0.1" type="video/webm">
+          </video>
+          <% } else { %>
+          <img loading="lazy" src="<%- item.thumbnail %>" class="thumbnail-image"/>
+          <% } %>
+        <% if (item.video) { %>
+        </a>
         <% } %>
       </div>
       <% } %>
@@ -44,6 +50,11 @@
       <% if (item.report) { %>
         <div class="listing-report listing-button" onclick="window.open('<%- item.report %>', '_blank'); return false;">
           <span>Memoria</span>
+        </div>
+      <% } %>
+      <% if (item.video) { %>
+        <div class="listing-video listing-button" onclick="window.open('<%- item.video %>', '_blank'); return false;">
+          <span>Video</span>
         </div>
       <% } %></div>
     </div>
