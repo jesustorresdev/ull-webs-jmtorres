@@ -24,10 +24,11 @@
 - title: "Aplicación de modelos del lenguaje en videojuegos"
   author: "Juan Rodríguez Suárez"
   # report: https://riull.ull.es/xmlui/handle/915/40004
-  # linkedin: https://linkedin.com/in/juan-rodriguez-suarez-0b1a4b1b6
+  linkedin:  linkedin.com/in/juan-rodríguez-suárez-2b8793297
   year: 2025
   categories: [TFG, Videojuegos, GenIA, Unity]
-  # thumbnail: assets/tfc/rodriguez2025.png
+  thumbnail: assets/tfc/rodriguez2025.webm
+  video: https://www.youtube.com/watch?v=q7x0aVv98wQ
   description: |
     Este trabajo explora la aplicación de modelos de lenguaje (LLM) en el desarrollo de videojuegos, centrándose
     en la generación de diálogos y narrativas dinámicas. Se implementa un prototipo que utiliza un modelo
@@ -40,6 +41,7 @@
   year: 2024
   categories: [TFM, Videojuegos, Salud, Unity]
   thumbnail: assets/tfc/magariños2024.webm
+  video: https://www.youtube.com/watch?v=45ujmo3orCY
   description: |
     Desarrollo de un videojuego controlado mediante <i>eye tracker</i> para
     emplearlo en la rehabilitación de pacientes con movilidad reducida
