@@ -64,3 +64,13 @@ div.quarto-post .listing-report {
     padding-right: 0.5em;
   }
 }
+
+div.quarto-post .listing-video {
+  background-color: #cd201f;
+
+  &::before {
+    font: var(--fa-font-brands);
+    content: "\f167";
+    padding-right: 0.5em;
+  }
+}
