@@ -1,10 +1,39 @@
+- title: "Land of the Forgotten"
+  author: "Sara Hernández Suárez"
+  # report: https://riull.ull.es/xmlui/handle/915/39982
+  author-portfolio: https://github.com/LonelyPrincess/
+  linkedin: https://www.linkedin.com/in/sara-hern%C3%A1ndez-su%C3%A1rez-167013115/
+  video: https://youtu.be/Ogy-14CSKq0
+  year: 2025
+  categories: [TFM, Videojuegos, Unreal, Aprendizaje]
+  thumbnail: assets/tfc/hernandez2025.webm
+  description: |
+    Desarrollo de un prototipo de videojuego que integra el aprendizaje del idioma japonés
+    como parte de sus mecánicas principales. Los jugadores deben escribir caracteres japoneses
+    para interactuar con elementos del nivel y progresar en el juego, convirtiendo el
+    aprendizaje del idioma en una experiencia más amena y gamificada. El proyecto incluye
+    la implementación de un sistema de dibujo y un algoritmo de detección de formas para
+    reconocer los caracteres escritos por el jugador.
+- title: "Inteligencia Artificial aplicada a Balatro"
+  author: "Lihao Zhu"
+  # report: https://riull.ull.es/xmlui/handle/915/39981
+  linkedin: https://www.linkedin.com/in/lihao-zhu-6bbb77228/
+  year: 2025
+  categories: [TFG, Videojuegos, IA, Unity]
+  thumbnail: assets/tfc/zhu2025.webm
+  description: |
+    Desarrollo e implementación de una inteligencia artificial para jugar al videojuego Balatro.
+    El proyecto evalúa dos enfoques para la extracción de información: captura de pantalla mediante
+    visión por computador y acceso a datos internos a través de APIs y mods. Se utiliza el algoritmo
+    Proximal Policy Optimization (PPO) para entrenar un agente capaz de
+    comprender las reglas del juego y tomar decisiones para maximizar la puntuación.
 - title: "Visualizador y analizador de partidas de Counter-Strike en Unity"
   author: "Alejandro Pérez Buquerín"
   # report: https://riull.ull.es/xmlui/handle/915/40002
-  # linkedin: https://linkedin.com/in/alejandro-perez-buquerin-0b1a4b1b6
+  linkedin: https://www.linkedin.com/in/alejandrobuquerin/
   year: 2025
   categories: [TFG, Videojuegos, Datos, Unity]
-  #thumbnail: assets/tfc/buquerin2025.png
+  thumbnail: assets/tfc/buquerin2025.png
   description: |
     Desarrollo de un visualizador y analizador de partidas del videojuego Counter-Strike: Global Offensive
     utilizando el motor Unity. El objetivo es crear una herramienta que permita a los jugadores analizar
@@ -34,6 +63,47 @@
     en la generación de diálogos y narrativas dinámicas. Se implementa un prototipo que utiliza un modelo
     de lenguaje para crear interacciones más inmersivas y personalizadas entre los jugadores y los personajes
     del juego.
+- title: "IA y deep learning en videojuegos"
+  author: "Julio Iván Carrasco Armas"
+  # report: https://riull.ull.es/xmlui/handle/915/39979
+  linkedin: https://www.linkedin.com/in/julio-ivan-carrasco-armas/
+  year: 2025
+  categories: [TFG, Videojuegos, IA, Unity]
+  thumbnail: assets/tfc/carrasco2025.webm
+  description: |
+    Desarrollo de un prototipo de videojuego que utiliza inteligencia artificial para el control
+    de personajes mediante agentes inteligentes. Se emplea el paquete ML-Agents de Unity para
+    entrenar agentes que pueden interactuar entre ellos y con el entorno del juego. El trabajo
+    investiga la viabilidad de integrar tecnologías de aprendizaje automático en el desarrollo
+    de videojuegos modernos.
+- title : "Simulador de algoritmos para sistemas operativos"
+  author: "Elías Hernández Abreu"
+  # report: https://riull.ull.es/xmlui/handle/915/399
+  linkedin: https://www.linkedin.com/in/elias-hernandez-abreu-0b1a4b1a6/
+  year: 2025
+  categories: [TFG, Sistemas Operativos, Aprendizaje]
+  thumbnail: assets/tfc/hernandez2025.png
+  description: |
+    Desarrollo de una aplicación educativa que simula la ejecución de algoritmos fundamentales
+    de sistemas operativos para su uso en la docencia. La herramienta proporciona apoyo visual
+    a profesores y estudiantes mediante la visualización paso a paso de algoritmos de planificación
+    de CPU y reemplazo de página. La aplicación permite reiniciar ejecuciones, cambiar algoritmos
+    y modificar parámetros en tiempo real, facilitando la comprensión de conceptos complejos
+    de sistemas operativos de manera interactiva y amena.
+- title: "Sistema operativo del ordenador de abordo en TeideSat"
+  author: "José Pablo Ruiz Galván"
+  # report: https://riull.ull.es/xmlui/handle/915/39980
+  linkedin: https://www.linkedin.com/in/jose-pablo-ruiz-galván-0b1a4b1a6/
+  year: 2025
+  categories: [TFG, Sistemas Operativos, Embebidos]
+  thumbnail: assets/tfc/ruiz2025.png
+  description: |
+    Análisis y selección de un sistema operativo de tiempo real (RTOS) para el ordenador de abordo
+    del nanosatélite TeideSat. El trabajo evalúa diferentes RTOS como FreeRTOS y Zephyr,
+    considerando criterios de compatibilidad con ARM Cortex-M7, eficiencia energética, robustez ante
+    fallos y soporte de protocolos. Se desarrolla un marco de evaluación técnica para
+    identificar la solución más adecuada para las limitaciones de memoria y procesamiento del entorno
+    espacial, contribuyendo al desarrollo del proyecto TeideSat.
 - title: Desarrollo de videojuegos serios para la rehabilitación de personas con daño cerebral
   author: Juan Salvador Magariños Alba
   author-portfolio: https://sites.google.com/ull.edu.es/jsalvmaga-portfolio/masters-degrees-final-project
