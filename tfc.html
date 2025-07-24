@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-905433ffa22618bb005779f2b23c5ce0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-25051aa1edd8b78846dea488bcf0f971.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -83,9 +83,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-year','listing-categories','listing-description','listing-linkedin','listing-thumbnail','listing-video','listing-author-portfolio','listing-report',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-year","listing-categories","listing-description","listing-linkedin","listing-thumbnail","listing-video","listing-author-portfolio","listing-report"],
+      valueNames: ['listing-title','listing-author','listing-author-portfolio','listing-linkedin','listing-video','listing-year','listing-categories','listing-thumbnail','listing-description','listing-report',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-year-sort'] }],
+      page: 10,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-author-portfolio","listing-linkedin","listing-video","listing-year","listing-categories","listing-thumbnail","listing-description","listing-report"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -192,7 +193,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QW5pbWFjaSVDMyVCM24=">Animación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0b3M=">Datos <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R2VuSUE=">GenIA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SUE=">IA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UENH">PCG <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Um9ndWVsaWtl">Roguelike <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2FsdWQ=">Salud <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VEZH">TFG <span class="quarto-category-count">(9)</span></div><div class="category" data-category="VEZN">TFM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VW5pdHk=">Unity <span class="quarto-category-count">(8)</span></div><div class="category" data-category="VW5yZWFs">Unreal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmlkZW9qdWVnb3M=">Videojuegos <span class="quarto-category-count">(9)</span></div><div class="category" data-category="V2Vi">Web <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(15)</span></div><div class="category" data-category="QW5pbWFjaSVDMyVCM24=">Animación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXByZW5kaXphamU=">Aprendizaje <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0b3M=">Datos <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RW1iZWJpZG9z">Embebidos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VuSUE=">GenIA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SUE=">IA <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UENH">PCG <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Um9ndWVsaWtl">Roguelike <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2FsdWQ=">Salud <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2lzdGVtYXMlMjBPcGVyYXRpdm9z">Sistemas Operativos <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VEZH">TFG <span class="quarto-category-count">(13)</span></div><div class="category" data-category="VEZN">TFM <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VW5pdHk=">Unity <span class="quarto-category-count">(10)</span></div><div class="category" data-category="VW5yZWFs">Unreal <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VmlkZW9qdWVnb3M=">Videojuegos <span class="quarto-category-count">(12)</span></div><div class="category" data-category="V2Vi">Web <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -225,7 +226,130 @@ window.Quarto = {
 </div>
 <div class="list quaro-listing-default">
   
-    <div class="quarto-post image-right" data-index="0" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNEYXRvcyUyQ1VuaXR5" data-listing-year-sort="2025">
+    <div class="quarto-post image-right" data-index="0" data-categories="VEZNJTJDVmlkZW9qdWVnb3MlMkNVbnJlYWwlMkNBcHJlbmRpemFqZQ==" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          <a href="https://youtu.be/Ogy-14CSKq0" target="_blank" rel="noopener">
+        
+          
+          <video autoplay="" muted="" loop="" preload="metadata">
+            <source src="assets/tfc/hernandez2025.webm#t=0.1" type="video/webm">
+          </video>
+          
+        
+        </a>
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Land of the Forgotten</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFM'); return false;">TFM</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Unreal'); return false;">Unreal</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Aprendizaje'); return false;">Aprendizaje</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de un prototipo de videojuego que integra el aprendizaje del idioma japonés
+como parte de sus mecánicas principales. Los jugadores deben escribir caracteres japoneses
+para interactuar con elementos del nivel y progresar en el juego, convirtiendo el
+aprendizaje del idioma en una experiencia más amena y gamificada. El proyecto incluye
+la implementación de un sistema de dibujo y un algoritmo de detección de formas para
+reconocer los caracteres escritos por el jugador.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2025</div>
+      <div class="listing-author">Sara Hernández Suárez</div>
+      
+        <div class="listing-author-portfolio listing-button" onclick="window.open('https://github.com/LonelyPrincess/', '_blank'); return false;">
+          <span>Portafolio</span>
+        </div>
+      
+      
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/sara-hern%C3%A1ndez-su%C3%A1rez-167013115/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
+      
+      
+        <div class="listing-video listing-button" onclick="window.open('https://youtu.be/Ogy-14CSKq0', '_blank'); return false;">
+          <span>Video</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="1" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNJQSUyQ1VuaXR5" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          
+          <video autoplay="" muted="" loop="" preload="metadata">
+            <source src="assets/tfc/zhu2025.webm#t=0.1" type="video/webm">
+          </video>
+          
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Inteligencia Artificial aplicada a Balatro</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('IA'); return false;">IA</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Unity'); return false;">Unity</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo e implementación de una inteligencia artificial para jugar al videojuego Balatro.
+El proyecto evalúa dos enfoques para la extracción de información: captura de pantalla mediante
+visión por computador y acceso a datos internos a través de APIs y mods. Se utiliza el algoritmo
+Proximal Policy Optimization (PPO) para entrenar un agente capaz de
+comprender las reglas del juego y tomar decisiones para maximizar la puntuación.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2025</div>
+      <div class="listing-author">Lihao Zhu</div>
+      
+      
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/lihao-zhu-6bbb77228/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="2" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNEYXRvcyUyQ1VuaXR5" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          
+          <img loading="lazy" src="assets/tfc/buquerin2025.png" class="thumbnail-image">
+          
+        
+      </div>
       
       <div class="body">
         
@@ -256,11 +380,15 @@ sus partidas y mejorar su rendimiento.
       <div class="listing-author">Alejandro Pérez Buquerín</div>
       
       
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/alejandrobuquerin/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
       
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="1" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbnJlYWw=" data-listing-year-sort="2025">
+    <div class="quarto-post image-right" data-index="3" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbnJlYWw=" data-listing-year-sort="2025">
       
       <div class="thumbnail">
         
@@ -310,7 +438,7 @@ para que se pueda apreciar cómo se genera el terreno en tiempo real.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="2" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNHZW5JQSUyQ1VuaXR5" data-listing-year-sort="2025">
+    <div class="quarto-post image-right" data-index="4" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNHZW5JQSUyQ1VuaXR5" data-listing-year-sort="2025">
       
       <div class="thumbnail">
         
@@ -368,7 +496,154 @@ del juego.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="3" data-categories="VEZNJTJDVmlkZW9qdWVnb3MlMkNTYWx1ZCUyQ1VuaXR5" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="5" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNJQSUyQ1VuaXR5" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          
+          <video autoplay="" muted="" loop="" preload="metadata">
+            <source src="assets/tfc/carrasco2025.webm#t=0.1" type="video/webm">
+          </video>
+          
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">IA y deep learning en videojuegos</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Videojuegos'); return false;">Videojuegos</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('IA'); return false;">IA</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Unity'); return false;">Unity</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de un prototipo de videojuego que utiliza inteligencia artificial para el control
+de personajes mediante agentes inteligentes. Se emplea el paquete ML-Agents de Unity para
+entrenar agentes que pueden interactuar entre ellos y con el entorno del juego. El trabajo
+investiga la viabilidad de integrar tecnologías de aprendizaje automático en el desarrollo
+de videojuegos modernos.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2025</div>
+      <div class="listing-author">Julio Iván Carrasco Armas</div>
+      
+      
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/julio-ivan-carrasco-armas/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="6" data-categories="VEZHJTJDU2lzdGVtYXMlMjBPcGVyYXRpdm9zJTJDQXByZW5kaXphamU=" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          
+          <img loading="lazy" src="assets/tfc/hernandez2025.png" class="thumbnail-image">
+          
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Simulador de algoritmos para sistemas operativos</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Sistemas Operativos'); return false;">Sistemas Operativos</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Aprendizaje'); return false;">Aprendizaje</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Desarrollo de una aplicación educativa que simula la ejecución de algoritmos fundamentales
+de sistemas operativos para su uso en la docencia. La herramienta proporciona apoyo visual
+a profesores y estudiantes mediante la visualización paso a paso de algoritmos de planificación
+de CPU y reemplazo de página. La aplicación permite reiniciar ejecuciones, cambiar algoritmos
+y modificar parámetros en tiempo real, facilitando la comprensión de conceptos complejos
+de sistemas operativos de manera interactiva y amena.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2025</div>
+      <div class="listing-author">Elías Hernández Abreu</div>
+      
+      
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/elias-hernandez-abreu-0b1a4b1a6/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="7" data-categories="VEZHJTJDU2lzdGVtYXMlMjBPcGVyYXRpdm9zJTJDRW1iZWJpZG9z" data-listing-year-sort="2025">
+      
+      <div class="thumbnail">
+        
+          
+          <img loading="lazy" src="assets/tfc/ruiz2025.png" class="thumbnail-image">
+          
+        
+      </div>
+      
+      <div class="body">
+        
+        <h3 class="no-anchor listing-title">Sistema operativo del ordenador de abordo en TeideSat</h3>
+        
+         
+        <div class="listing-categories">
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('TFG'); return false;">TFG</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Sistemas Operativos'); return false;">Sistemas Operativos</div>
+        
+          <div class="listing-category" onclick="window.quartoListingCategory('Embebidos'); return false;">Embebidos</div>
+        
+        </div>
+         
+        
+        <div class="delink listing-description">Análisis y selección de un sistema operativo de tiempo real (RTOS) para el ordenador de abordo
+del nanosatélite TeideSat. El trabajo evalúa diferentes RTOS como FreeRTOS y Zephyr,
+considerando criterios de compatibilidad con ARM Cortex-M7, eficiencia energética, robustez ante
+fallos y soporte de protocolos. Se desarrolla un marco de evaluación técnica para
+identificar la solución más adecuada para las limitaciones de memoria y procesamiento del entorno
+espacial, contribuyendo al desarrollo del proyecto TeideSat.
+</div>
+        
+      </div>
+      <div class="metadata">
+      <div class="listing-date">2025</div>
+      <div class="listing-author">José Pablo Ruiz Galván</div>
+      
+      
+        <div class="listing-linkedin listing-button" onclick="window.open('https://www.linkedin.com/in/jose-pablo-ruiz-galván-0b1a4b1a6/', '_blank'); return false;">
+          <span>Linkedin</span>
+        </div>
+      
+      
+      </div>
+    </div>
+  
+    <div class="quarto-post image-right" data-index="8" data-categories="VEZNJTJDVmlkZW9qdWVnb3MlMkNTYWx1ZCUyQ1VuaXR5" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -429,7 +704,7 @@ ocasionada por una lesión cerebral.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="4" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbml0eQ==" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="9" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbml0eQ==" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -483,7 +758,7 @@ dónde puede recoger recursos.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="5" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbml0eQ==" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="10" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNQQ0clMkNVbml0eQ==" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -535,7 +810,7 @@ para crear un mapa de tipo «mazmorra» en el que el jugador puede moverse.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="6" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNBbmltYWNpJUMzJUIzbiUyQ1VuaXR5" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="11" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNBbmltYWNpJUMzJUIzbiUyQ1VuaXR5" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -583,7 +858,7 @@ en el motor Unity.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="7" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNVbml0eSUyQ0lB" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="12" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNVbml0eSUyQ0lB" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -637,7 +912,7 @@ empleando técnicas de aprendizaje automático para optimizar su comportamiento.
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="8" data-categories="VEZHJTJDRGF0b3MlMkNTYWx1ZCUyQ1dlYg==" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="13" data-categories="VEZHJTJDRGF0b3MlMkNTYWx1ZCUyQ1dlYg==" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -683,7 +958,7 @@ enfermedad pulmonar obstructiva crónica (EPOC).
       </div>
     </div>
   
-    <div class="quarto-post image-right" data-index="9" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNVbml0eSUyQ1JvZ3VlbGlrZQ==" data-listing-year-sort="2024">
+    <div class="quarto-post image-right" data-index="14" data-categories="VEZHJTJDVmlkZW9qdWVnb3MlMkNVbml0eSUyQ1JvZ3VlbGlrZQ==" data-listing-year-sort="2024">
       
       <div class="thumbnail">
         
@@ -736,6 +1011,9 @@ de habilidades y conocimientos adquiridos en partidas anteriores para superar de
   
 </div>
 <div class="listing-no-matching d-none">No hay resultados</div>
+<nav id="tfc-listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
