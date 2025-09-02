@@ -2,9 +2,9 @@
 title: Tutorías
 ---
 
-## Horario 2024/2025
+## Horario de tutorías
 
-Durante el actual curso académico 2024/2025, el horario de tutorías previsto será el siguiente:
+Durante el actual curso académico, el horario de tutorías previsto será el siguiente:
 
 * **Martes**, de 17:00 a 20:00.
 * **Miércoles**, de 17:00 a 20:00.
@@ -19,7 +19,8 @@ En caso de tener algún tipo de problema con estos horarios, no dudes en ponerse
 
 ## Online / presencial
 
-**Las tutorías pueden ser por videoconferencia**, utilizando Google Meet, **o presenciales**. En el formulario utilizado para reservar la tutoría se debe indicar la preferencia a este respecto.
+**Las tutorías pueden ser por videoconferencia**, utilizando Google Meet, **o presenciales**.
+En el formulario utilizado para reservar la tutoría se debe indicar la preferencia a este respecto.
 
 ## Ubicación
 
@@ -27,4 +28,4 @@ Las tutorías presenciales tendrán lugar en el **despacho P3.008 del edificio d
 
 A continuación se puede ver la ubicación del módulo A de la Escuela Superior de Ingeniería y Tecnología:
 
-<iframe width="800" height="661" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.323623657226566%2C28.481687078443027%2C-16.320708096027378%2C28.48455149944618&amp;layer=mapnik&amp;marker=28.48312047743093%2C-16.322167217731476" style="border: 1px solid black"></iframe>
+<iframe width="800" height="661" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.323623657226566%2C28.481687078443027%2C-16.320708096027378%2C28.48455149944618&amp;layer=mapnik&amp;marker=28.48312047743093%2C-16.322167217731476" style="border: 1px solid black"></iframe> 
