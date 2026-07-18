@@ -25,7 +25,7 @@ En el formulario utilizado para reservar la tutoría se debe indicar la preferen
 
 ## Ubicación
 
-Las tutorías presenciales tendrán lugar en el **despacho P3.008 del edificio de la Escuela Superior de Ingeniería y Tecnología**, ubicado en la última planta del módulo A de dicho edificio.
+Las tutorías presenciales tendrán lugar en el **despacho P3.08 del edificio de la Escuela Superior de Ingeniería y Tecnología**, ubicado en la última planta del módulo A de dicho edificio.
 
 A continuación se puede ver la ubicación del módulo A de la Escuela Superior de Ingeniería y Tecnología:
 
