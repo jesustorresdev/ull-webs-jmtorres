@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:latest": {
+      "version": "1.1.5",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/quarto-cli@sha256:7d1ba1c977b72d616e76089f016c87c1a581a05386aee635bae08e5a1375507d",
+      "integrity": "sha256:7d1ba1c977b72d616e76089f016c87c1a581a05386aee635bae08e5a1375507d"
+    }
+  }
+}
