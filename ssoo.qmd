@@ -2,11 +2,13 @@
 title: "Apuntes de Sistemas Operativos"
 ---
 
-Las clases de sistemas operativos que imparto se basan en unos apuntes de teoría que he ido elaborando a lo largo de los años. Aunque hace tiempo que son públicos, dejo los enlaces por aquí, por si pueden resultar interesantes a otras personas.
+Las clases de sistemas operativos que imparto se basan en unos apuntes de teoría que he ido elaborando a lo largo de los años.
+Aunque hace tiempo que son públicos, dejo los enlaces por aquí, por si pueden resultar interesantes a otras personas.
 
-Los apuntes están hechos con [Asciidoctor](https://asciidoctor.org/) y las fuentes están disponibles en [GitHub](https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes). Desde la sección [*releases*](https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes/releases) de ese mismo repositorio, se puede descargar la última versión en PDF. Mientras que la última versión en HTML siempre está disponible en:
+Actualmente los apuntes están disponibles en formato web en un sitio desarrollado con [Astro/Starlight](https://starlight.astro.build/).
+Las fuentes no son públicas, pero el contenido está publicado con licencia [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), lo que significa que se pueden compartir y adaptar libremente, siempre que se reconozca la autoría y se indique si se han realizado cambios:
 
-🔗 [https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/](https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/)
+🔗 [Apuntes de Sistemas Operativos](https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/)
 
 Los apuntes cubren los temas:
 
@@ -18,8 +20,8 @@ Los apuntes cubren los temas:
     
 4. 📚**Gestión de memoria**: esta sección se centra en cómo los sistemas operativos gestionan la memoria principal.
     
-5. 💿**Gestión del almacenamiento**: esta sección se centra en como se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.
+5. 💿**Gestión del almacenamiento**: esta sección se centra en cómo se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.
     
 A lo largo de los distintos capítulos se hace uso de algunos códigos de ejemplo. Estos códigos son partes de programas en C o C++ disponibles al completo en el siguiente repositorio:
 
-{{< fa brands github >}} [https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos](https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos)
+{{< fa brands github >}} [Ejemplos de las clases de Sistemas Operativos](https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos)
