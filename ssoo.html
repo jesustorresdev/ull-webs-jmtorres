@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c98d9d0b3b0a085d3ddf71e6e91476d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2fec38ee02d3b8f3e61263e2c210ebc4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -194,18 +197,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Las clases de sistemas operativos que imparto se basan en unos apuntes de teoría que he ido elaborando a lo largo de los años. Aunque hace tiempo que son públicos, dejo los enlaces por aquí, por si pueden resultar interesantes a otras personas.</p>
-<p>Los apuntes están hechos con <a href="https://asciidoctor.org/">Asciidoctor</a> y las fuentes están disponibles en <a href="https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes">GitHub</a>. Desde la sección <a href="https://github.com/ull-esit-sistemas-operativos/ssoo-apuntes/releases"><em>releases</em></a> de ese mismo repositorio, se puede descargar la última versión en PDF. Mientras que la última versión en HTML siempre está disponible en:</p>
-<p>🔗 <a href="https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/">https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/</a></p>
+<p>Actualmente los apuntes están disponibles en formato web en un sitio desarrollado con <a href="https://starlight.astro.build/">Astro/Starlight</a>. Las fuentes no son públicas, pero el contenido está publicado con licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, lo que significa que se pueden compartir y adaptar libremente, siempre que se reconozca la autoría y se indique si se han realizado cambios:</p>
+<p>🔗 <a href="https://ull-esit-sistemas-operativos.github.io/ssoo-apuntes/">Apuntes de Sistemas Operativos</a></p>
 <p>Los apuntes cubren los temas:</p>
 <ol type="1">
 <li><p>📝<strong>Introducción a los sistemas operativos</strong>: esta sección proporciona una descripción general de los sistemas operativos, incluyendo su historia, funciones y tipos.</p></li>
 <li><p>🫧<strong>Organización de los sistemas operativos</strong>: esta sección se centra en la organización interna de los sistemas operativos, considerando sus componentes, servicios e interfaces; además de ofrecer una visión superficial sobre cómo funcionan.</p></li>
 <li><p>⚙️<strong>Gestión de procesos</strong>: esta sección se centra en cómo los sistemas operativos gestionan los procesos.</p></li>
 <li><p>📚<strong>Gestión de memoria</strong>: esta sección se centra en cómo los sistemas operativos gestionan la memoria principal.</p></li>
-<li><p>💿<strong>Gestión del almacenamiento</strong>: esta sección se centra en como se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.</p></li>
+<li><p>💿<strong>Gestión del almacenamiento</strong>: esta sección se centra en cómo se gestionan los dispositivos de almacenamiento secundario y los sistemas de archivos.</p></li>
 </ol>
 <p>A lo largo de los distintos capítulos se hace uso de algunos códigos de ejemplo. Estos códigos son partes de programas en C o C++ disponibles al completo en el siguiente repositorio:</p>
-<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos">https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos</a></p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/ull-esit-sistemas-operativos/ssoo-ejemplos">Ejemplos de las clases de Sistemas Operativos</a></p>
 
 
 
